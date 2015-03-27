@@ -56,7 +56,7 @@ public class infoUnit extends Activity {
                 AddText(tr, model.getAttacks().toString());
                 AddText(tr, model.getLeadership().toString());
                 AddText(tr, model.getSave().toString() + "+");
-                AddText(tr, ""/*model.getType().toString()*/);
+                //AddText(tr, ""model.getType().toString());
                 stats.addView(tr);
             } else {
                 if(lastType == null || lastType != W40kModelType.BasicType.VEHICLE) {
@@ -75,7 +75,7 @@ public class infoUnit extends Activity {
                 AddText(tr, model.getHullPoints().toString());
                 AddText(tr, (isWalker)?model.getInitiative().toString() : "");
                 AddText(tr, (isWalker)?model.getAttacks().toString() : "");
-                AddText(tr, ""/*model.getType().toString()*/);
+                //AddText(tr, ""model.getType().toString());
                 stats.addView(tr);
             }
             lastType = model.getType().getBasicType();
@@ -108,7 +108,7 @@ public class infoUnit extends Activity {
         AddText(tr, "HP");
         AddText(tr, "I");
         AddText(tr, "A");
-        AddText(tr, "type");
+        //AddText(tr, "type");
         view.addView(tr);
     }
 
@@ -125,7 +125,7 @@ public class infoUnit extends Activity {
         AddText(tr, "A");
         AddText(tr, "Ld");
         AddText(tr, "Sv");
-        AddText(tr, "type");
+        //AddText(tr, "type");
         view.addView(tr);
     }
 
