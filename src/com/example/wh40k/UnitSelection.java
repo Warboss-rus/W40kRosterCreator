@@ -93,8 +93,8 @@ public class UnitSelection {
                 for (W40kOption option : optionSlot.getOptions()) {
                     if(option.getValue() <= 0)
                         continue;
-                    double cost = (option.getCost() != 0) ? option.getCost() : 0.1;
-                    double optionEffect = option.getValue() / cost;
+                    double cost = option.getCost() + unit.getCost();
+                    double optionEffect = (option.getValue() + unit.getValue()) / cost;
                     if(optionEffect <= bestEffect) {
                         continue;
                     } else {
@@ -178,8 +178,7 @@ public class UnitSelection {
             sum += unit.getCost();
         }
         if(sum > maxCost) {
-            //achtung
-            return new ArrayList<W40kUnit>();
+            throw new RuntimeException("Cost limit is too low");
         }
 
         for(int i = 0; i < fullRoster.size(); i++) {

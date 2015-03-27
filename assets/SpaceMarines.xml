@@ -1,11 +1,16 @@
 <units>
-	<unit slot="hq" name="Marneus Calgar" cost="275" value="150" unique="true">
+	<unit slot="hq" name="Marneus Calgar" cost="275" value="300" unique="true">
 		<image>http://www.games-workshop.com/resources/catalog/product/600x620/99800101042_CalgarLordofMacraggeNEW01.jpg</image>
 		<description>Marneus Augustus Calgar is the current Chapter Master of the Ultramarines Space Marines Chapter and the Lord of Macragge, capital world of the Realm of Ultramar in the Eastern Fringes of the galaxy.</description>
 		<model name="Marneus Calgar" WS="6" BS="5" S="4" T="4" W="4" I="5" A="4" Ld="10" Sv="2" type="Infantry (Character)" count="1" max="1"/>
 		<options max="1">
 			<option name="Armour of Antilochus" cost="10" value="0" description="Terminator armour that doesn't prevent sweeping advances and has Teleport homer"/>
 		</options>
+	</unit>
+	<unit slot="hq" name="Chief Librarian Tigurius" cost="165" value="220" unique="true">
+		<image>http://www.games-workshop.com/resources/catalog/product/600x620/99800101038_ChiefLibrarianTiguriusNEW01.jpg</image>
+		<description>Tigurius is the Ultramarines Chief Librarian and has always stood apart from his battle-brothers. He is a figure of mystery, possessed of knowledge that goes beyond the towering datastacks and myriad scrolls of the Chapter’s librarius.</description>
+		<model name="Librarian" WS="5" BS="4" S="4" T="4" W="3" I="4" A="2" Ld="10" Sv="3" type="Infantry (Character)" count="1" max="1"/>
 	</unit>
 	<unit slot="hq" name="Chapter Master" cost="130" value="80" unique="false">
 		<image>http://www.games-workshop.com/resources/catalog/product/600x620/99120101032_SpaceMarineCommanderNEW02.jpg</image>
@@ -29,10 +34,10 @@
 			<option name="The Burning blade" cost="55" value="100" description="S: +3, AP2, Melee, Blind, Incandescent"/>
 		</options>
 		<options max="1"><!--armour-->
-			<option name="Artificer Armour" cost="20" value="40" description="Grants 2+ armour save"/>
+			<option name="Artificer Armour" cost="20" value="30" description="Grants 2+ armour save"/>
 		</options>
 		<options max="1">
-			<option name="Bike" cost="20" value="100" description="Grants bike unit type"/>
+			<option name="Bike" cost="20" value="50" description="Grants bike unit type"/>
 			<option name="Jump pack" cost="15" value="30" description="Grants Jump Infantry unit type"/>
 		</options>
 	</unit>
@@ -41,7 +46,7 @@
 		<description>Librarians are the psykers of the Space Marines who survive an Adeptus Astartes Chapter's rigorous screening and training to bend the powers of the Warp to their will for the benefit of their fellow Battle-Brothers and in service to the Emperor of Mankind.</description>
 		<model name="Librarian" WS="4" BS="4" S="4" T="4" W="2" I="4" A="2" Ld="10" Sv="3" type="Infantry (Character)" count="1" max="1"/>
 		<options max="1">
-			<option name="Mastery Level 2" cost="25" value="50"/>
+			<option name="Mastery Level 2" cost="25" value="40"/>
 		</options>
 		<options max="1"><!--ranged-->
 			<option name="Boltgun" cost="0" value="-10" description="Range: 24, S4, AP5, Rapid Fire"/>
@@ -49,7 +54,7 @@
 			<option name="Plasma pistol" cost="15" value="5" description="Range: 12, S7, AP2, Pistol"/>
 		</options>
 		<options max="1">
-			<option name="Bike" cost="20" value="40" description="Grants bike unit type"/>
+			<option name="Bike" cost="20" value="35" description="Grants bike unit type"/>
 			<option name="Jump pack" cost="15" value="30" description="Grants Jump Infantry unit type"/>
 		</options>
 	</unit>

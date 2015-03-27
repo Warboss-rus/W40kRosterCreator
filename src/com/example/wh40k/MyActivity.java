@@ -89,7 +89,7 @@ public class MyActivity extends Activity {
                     startActivity(intent);
                 } catch (Exception e) {
                     MakeToast(e.getLocalizedMessage());
-                    Log.d("Parsing", e.getMessage());
+                    Log.d("UnitSelectionError: ", e.getMessage());
                 }
             }
         });
