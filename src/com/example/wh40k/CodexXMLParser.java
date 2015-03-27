@@ -82,13 +82,16 @@ public class CodexXMLParser {
         model.setName(parser.getAttributeValue(null, "name"));
         String ws = parser.getAttributeValue(null, "WS");
         if(ws != null) model.setWeaponSkill(Integer.parseInt(ws));
+        String i = parser.getAttributeValue(null, "I");
+        if(i != null) model.setInitiative(Integer.parseInt(i));
+        String a = parser.getAttributeValue(null, "A");
+        if(a != null) model.setAttacks(Integer.parseInt(a));
         model.setBallisticSkill(Integer.parseInt(parser.getAttributeValue(null, "BS")));
+        String s = parser.getAttributeValue(null, "S");
+        if(s != null) model.setStrength(Integer.parseInt(s));
         if(model.getType().getBasicType() != W40kModelType.BasicType.VEHICLE) {
-            model.setStrength(Integer.parseInt(parser.getAttributeValue(null, "S")));
             model.setToughness(Integer.parseInt(parser.getAttributeValue(null, "T")));
             model.setWounds(Integer.parseInt(parser.getAttributeValue(null, "W")));
-            model.setInitiative(Integer.parseInt(parser.getAttributeValue(null, "I")));
-            model.setAttacks(Integer.parseInt(parser.getAttributeValue(null, "A")));
             model.setLeadership(Integer.parseInt(parser.getAttributeValue(null, "Ld")));
             model.setSave(Integer.parseInt(parser.getAttributeValue(null, "Sv")));
         } else {

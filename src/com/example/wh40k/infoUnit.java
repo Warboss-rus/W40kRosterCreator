@@ -55,24 +55,26 @@ public class infoUnit extends Activity {
                 AddText(tr, model.getInitiative().toString());
                 AddText(tr, model.getAttacks().toString());
                 AddText(tr, model.getLeadership().toString());
-                AddText(tr, model.getSave().toString());
+                AddText(tr, model.getSave().toString() + "+");
                 AddText(tr, ""/*model.getType().toString()*/);
                 stats.addView(tr);
             } else {
                 if(lastType == null || lastType != W40kModelType.BasicType.VEHICLE) {
                     addVehicleHeader(stats);
                 }
+                boolean isWalker = model.getType().getModifiers().contains(W40kModelType.TypeModifiers.WALKER);
                 TableRow tr =  new TableRow(this);
                 AddText(tr, model.getDefaultCount().toString());
                 AddText(tr, model.getName());
-                AddText(tr, model.getWeaponSkill().toString());
+                AddText(tr, (isWalker) ? model.getWeaponSkill().toString() : "");
                 AddText(tr, model.getBallisticSkill().toString());
+                AddText(tr, (isWalker)?model.getStrength().toString() : "");
                 AddText(tr, model.getFrontArmour().toString());
                 AddText(tr, model.getSideArmour().toString());
                 AddText(tr, model.getRearArmour().toString());
                 AddText(tr, model.getHullPoints().toString());
-                AddText(tr, model.getInitiative().toString());
-                AddText(tr, model.getAttacks().toString());
+                AddText(tr, (isWalker)?model.getInitiative().toString() : "");
+                AddText(tr, (isWalker)?model.getAttacks().toString() : "");
                 AddText(tr, ""/*model.getType().toString()*/);
                 stats.addView(tr);
             }
@@ -99,6 +101,7 @@ public class infoUnit extends Activity {
         AddText(tr, "Name");
         AddText(tr, "WS");
         AddText(tr, "BS");
+        AddText(tr, "S");
         AddText(tr, "FA");
         AddText(tr, "SA");
         AddText(tr, "RA");

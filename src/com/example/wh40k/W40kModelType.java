@@ -21,7 +21,7 @@ public class W40kModelType implements Parcelable {
     @Override
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeSerializable(type);
-       // parcel.writeList(modifiers);
+        parcel.writeList(modifiers);
     }
 
     public BasicType getBasicType() {
@@ -39,6 +39,9 @@ public class W40kModelType implements Parcelable {
             type=BasicType.VEHICLE;
         }
         modifiers = new ArrayList<TypeModifiers>();
+        if(lowerStr.contains("walker")) {
+            modifiers.add(TypeModifiers.WALKER);
+        }
     }
 
     public enum BasicType {
@@ -75,7 +78,7 @@ public class W40kModelType implements Parcelable {
         public W40kModelType createFromParcel(Parcel parcel) {
             W40kModelType type = new W40kModelType("");
             type.type = (BasicType)parcel.readSerializable();
-            //parcel.readList(type.modifiers, TypeModifiers.class.getClassLoader());
+            parcel.readList(type.modifiers, TypeModifiers.class.getClassLoader());
             return type;
         }
 
