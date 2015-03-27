@@ -25,6 +25,8 @@ public class W40kModel implements Parcelable {
     private Integer sideArmour;
     private Integer rearArmour;
     private Integer hullPoints;
+    private Integer cost;
+    private Integer value;
 
     @Override
     public int describeContents() {
@@ -51,6 +53,7 @@ public class W40kModel implements Parcelable {
         parcel.writeInt((sideArmour == null)?0:sideArmour);
         parcel.writeInt((rearArmour == null)?0:rearArmour);
         parcel.writeInt((hullPoints == null)?0:hullPoints);
+        parcel.writeInt((cost == null)?0:cost);
     }
 
     public String getName() {
@@ -219,6 +222,7 @@ public class W40kModel implements Parcelable {
             model.sideArmour = parcel.readInt();
             model.rearArmour = parcel.readInt();
             model.hullPoints = parcel.readInt();
+            model.cost = parcel.readInt();
             return model;
         }
 
@@ -227,4 +231,20 @@ public class W40kModel implements Parcelable {
             return new W40kModel[i];
         }
     };
+
+    public Integer getCost() {
+        return cost;
+    }
+
+    public void setCost(Integer cost) {
+        this.cost = cost;
+    }
+
+    public Integer getValue() {
+        return value;
+    }
+
+    public void setValue(Integer value) {
+        this.value = value;
+    }
 }

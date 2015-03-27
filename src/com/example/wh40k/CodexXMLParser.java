@@ -95,10 +95,14 @@ public class CodexXMLParser {
             model.setFrontArmour(Integer.parseInt(parser.getAttributeValue(null, "FA")));
             model.setSideArmour(Integer.parseInt(parser.getAttributeValue(null, "SA")));
             model.setRearArmour(Integer.parseInt(parser.getAttributeValue(null, "RA")));
-            model.setRearArmour(Integer.parseInt(parser.getAttributeValue(null, "HP")));
+            model.setHullPoints(Integer.parseInt(parser.getAttributeValue(null, "HP")));
         }
         model.setDefaultCount(Integer.parseInt(parser.getAttributeValue(null, "count")));
         model.setMaxCount(Integer.parseInt(parser.getAttributeValue(null, "max")));
+        String cost = parser.getAttributeValue(null, "cost");
+        if(cost != null) model.setCost(Integer.parseInt(cost));
+        String value = parser.getAttributeValue(null, "value");
+        if(value != null) model.setValue(Integer.parseInt(value));
         parser.next();
         parser.require(XmlPullParser.END_TAG, "", "model");
         return model;

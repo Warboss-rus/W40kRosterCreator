@@ -7,10 +7,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.SimpleAdapter;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.widget.*;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -21,19 +18,67 @@ import java.util.Map;
 /**
  * Created by Dertkaes on 3/25/2015.
  */
+
 public class infoUnit extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_upgrades);
+
         W40kUnit unit = getIntent().getParcelableExtra("unit");
         ListView upgrades = (ListView)findViewById(R.id.listView2);
         View header = getLayoutInflater().inflate(R.layout.info_header, null);
         upgrades.addHeaderView(header);
+
         TextView name = (TextView)findViewById(R.id.textView3);
         name.setText(unit.getName());
         TextView description = (TextView)findViewById(R.id.textView4);
         description.setText(unit.getDescription());
+
+        TableLayout stats = (TableLayout)findViewById(R.id.statsTable);
+        stats.setStretchAllColumns(true);
+        stats.bringToFront();
+        W40kModelType.BasicType lastType = null;
+        for(W40kModel model : unit.getModels()) {
+            if(model.getType().getBasicType() != W40kModelType.BasicType.VEHICLE) {
+                if(lastType == null || lastType == W40kModelType.BasicType.VEHICLE) {
+                    addInfantryHeader(stats);
+                }
+                TableRow tr =  new TableRow(this);
+                AddText(tr, model.getDefaultCount().toString());
+                AddText(tr, model.getName());
+                AddText(tr, model.getWeaponSkill().toString());
+                AddText(tr, model.getBallisticSkill().toString());
+                AddText(tr, model.getStrength().toString());
+                AddText(tr, model.getToughness().toString());
+                AddText(tr, model.getWounds().toString());
+                AddText(tr, model.getInitiative().toString());
+                AddText(tr, model.getAttacks().toString());
+                AddText(tr, model.getLeadership().toString());
+                AddText(tr, model.getSave().toString());
+                AddText(tr, ""/*model.getType().toString()*/);
+                stats.addView(tr);
+            } else {
+                if(lastType == null || lastType != W40kModelType.BasicType.VEHICLE) {
+                    addVehicleHeader(stats);
+                }
+                TableRow tr =  new TableRow(this);
+                AddText(tr, model.getDefaultCount().toString());
+                AddText(tr, model.getName());
+                AddText(tr, model.getWeaponSkill().toString());
+                AddText(tr, model.getBallisticSkill().toString());
+                AddText(tr, model.getFrontArmour().toString());
+                AddText(tr, model.getSideArmour().toString());
+                AddText(tr, model.getRearArmour().toString());
+                AddText(tr, model.getHullPoints().toString());
+                AddText(tr, model.getInitiative().toString());
+                AddText(tr, model.getAttacks().toString());
+                AddText(tr, ""/*model.getType().toString()*/);
+                stats.addView(tr);
+            }
+            lastType = model.getType().getBasicType();
+        }
+
         List<W40kOption> options = unit.getOptions();
         List<Map<String, String>> items = new ArrayList<Map<String, String>>();
         for(W40kOption option : options) {
@@ -46,6 +91,45 @@ public class infoUnit extends Activity {
         upgrades.setAdapter(adapter);
         upgrades.requestLayout();
         new DownloadImageTask((ImageView)findViewById(R.id.imageView)).execute(unit.getImagePath());
+    }
+
+    private void addVehicleHeader(TableLayout view) {
+        TableRow tr = new TableRow(this);
+        AddText(tr, "#");
+        AddText(tr, "Name");
+        AddText(tr, "WS");
+        AddText(tr, "BS");
+        AddText(tr, "FA");
+        AddText(tr, "SA");
+        AddText(tr, "RA");
+        AddText(tr, "HP");
+        AddText(tr, "I");
+        AddText(tr, "A");
+        AddText(tr, "type");
+        view.addView(tr);
+    }
+
+    private void addInfantryHeader(TableLayout view) {
+        TableRow tr = new TableRow(this);
+        AddText(tr, "#");
+        AddText(tr, "Name");
+        AddText(tr, "WS");
+        AddText(tr, "BS");
+        AddText(tr, "S");
+        AddText(tr, "T");
+        AddText(tr, "W");
+        AddText(tr, "I");
+        AddText(tr, "A");
+        AddText(tr, "Ld");
+        AddText(tr, "Sv");
+        AddText(tr, "type");
+        view.addView(tr);
+    }
+
+    private void AddText(TableRow tr, String text) {
+        TextView tw = new TextView(this);
+        tw.setText(text);
+        tr.addView(tw);
     }
 
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
