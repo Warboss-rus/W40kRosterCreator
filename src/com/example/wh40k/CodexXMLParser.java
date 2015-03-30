@@ -48,7 +48,7 @@ public class CodexXMLParser {
                 W40kModel model = ParseModel(parser);
                 unit.addModel(model);
             } else if(name.equals("options")) {
-                W40kOptionSlot optionSlot = ParseOptions(parser);
+                W40kOptionSlot optionSlot = ParseOptions(parser, unit);
                 unit.addOptionSlot(optionSlot);
             }  else if(name.equals("image")) {
                 parser.require(XmlPullParser.START_TAG, "", "image");
@@ -111,7 +111,7 @@ public class CodexXMLParser {
         return model;
     }
 
-    W40kOptionSlot ParseOptions(XmlPullParser parser) throws XmlPullParserException, IOException {
+    W40kOptionSlot ParseOptions(XmlPullParser parser, W40kUnit unit) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, "", "options");
         W40kOptionSlot slot = new W40kOptionSlot();
         slot.setMax(Integer.parseInt(parser.getAttributeValue(null, "max")));
@@ -119,6 +119,8 @@ public class CodexXMLParser {
         slot.setUpgradesPerModels((requredModels != null) ? Integer.parseInt(requredModels) : 0);
         String onePerModel = parser.getAttributeValue(null, "onePerModel");
         slot.setOnePerModel((onePerModel != null) ? Boolean.parseBoolean(onePerModel) : false);
+        String model = parser.getAttributeValue(null, "model");
+        if(model != null) slot.setModel(unit.getModelByName(model));
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) continue;
             String name = parser.getName();
