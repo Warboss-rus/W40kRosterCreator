@@ -93,8 +93,25 @@ public class UnitSelection {
                 for (W40kOption option : optionSlot.getOptions()) {
                     if(option.getValue() <= 0)
                         continue;
-                    double cost = option.getCost() + unit.getCost();
-                    double optionEffect = (option.getValue() + unit.getValue()) / cost;
+                    int cost = option.getCost() + unit.getCost();
+                    int value = option.getValue() + unit.getValue();
+                    if(optionSlot.getUpgradesPerModels() > getDefaultModelsCount(unit)) {
+                        cost += getAddModelsCost(unit);
+                        value += getAddModelsValue(unit);
+                        option.setValue(value - unit.getValue());
+                        option.setCost(value - unit.getCost());
+                    }
+                    if(optionSlot.getModel() != null) {
+                        W40kModel model = unit.getModelByName(optionSlot.getModel().getName());
+                        if(model.getDefaultCount() == 0) {
+                            int maxCount =  Math.min(optionSlot.getMax(), model.getMaxCount());
+                            cost += model.getCost() * maxCount;
+                            value += model.getValue() * maxCount;
+                            option.setCost(option.getCost() + model.getCost() * maxCount);
+                            option.setValue(option.getValue() + model.getValue() * maxCount);
+                        }
+                    }
+                    double optionEffect = value / cost;
                     if(optionEffect <= bestEffect) {
                         continue;
                     } else {
@@ -113,6 +130,21 @@ public class UnitSelection {
             for(Map.Entry<W40kOptionSlot, W40kOption> entry : bestOptions.entrySet()) {
                 W40kOption option = entry.getValue();
                 for(int i = 0; i < Math.min(entry.getKey().getMax(), unit.getNumberOfModels()); i++) {
+                    if(entry.getKey().getUpgradesPerModels() > getDefaultModelsCount(cloneUnit))
+                    {
+                        setUnitModelsCountToMax(cloneUnit);
+                        cloneUnit.setBasicCost(cloneUnit.getBasicCost() + getAddModelsCost(cloneUnit));
+                        cloneUnit.setBasicValue(cloneUnit.getBasicValue() + getAddModelsValue(cloneUnit));
+                    }
+                    if(entry.getKey().getModel() != null) {
+                        W40kModel model = unit.getModelByName(entry.getKey().getModel().getName());
+                        if(model.getDefaultCount() == 0) {
+                            int maxCount =  Math.min(entry.getKey().getMax(), model.getMaxCount());
+                            model.setDefaultCount(maxCount);
+                            cloneUnit.setBasicCost(cloneUnit.getBasicCost() + model.getCost() * maxCount);
+                            cloneUnit.setBasicValue(cloneUnit.getBasicValue() + model.getValue() * maxCount);
+                        }
+                    }
                     cloneUnit.addOption(option);
                 }
                 fullRoster.add(cloneUnit);
@@ -256,5 +288,35 @@ public class UnitSelection {
 
     public void setMaxCost(Integer maxCost) {
         this.maxCost = maxCost;
+    }
+
+    private int getDefaultModelsCount(W40kUnit unit) {
+        int result = 0;
+        for(W40kModel model : unit.getModels()) {
+            result += model.getDefaultCount();
+        }
+        return result;
+    }
+
+    private int getAddModelsCost(W40kUnit unit) {
+        int result = 0;
+        for(W40kModel model : unit.getModels()) {
+            result += model.getCost() * (model.getMaxCount() - model.getDefaultCount());
+        }
+        return result;
+    }
+
+    private int getAddModelsValue(W40kUnit unit) {
+        int result = 0;
+        for(W40kModel model : unit.getModels()) {
+            result += model.getValue() * (model.getMaxCount() - model.getDefaultCount());
+        }
+        return result;
+    }
+
+    private void setUnitModelsCountToMax(W40kUnit unit) {
+        for(W40kModel model : unit.getModels()) {
+            model.setDefaultCount(model.getMaxCount());
+        }
     }
 }

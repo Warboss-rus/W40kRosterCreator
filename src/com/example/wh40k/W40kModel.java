@@ -25,8 +25,8 @@ public class W40kModel implements Parcelable {
     private Integer sideArmour;
     private Integer rearArmour;
     private Integer hullPoints;
-    private Integer cost;
-    private Integer value;
+    private Integer cost = 0;
+    private Integer value = 0;
 
     @Override
     public int describeContents() {
