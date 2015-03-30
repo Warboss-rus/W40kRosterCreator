@@ -6,7 +6,7 @@ import android.os.Parcelable;
 /**
  * Created by Urgak_000 on 21.03.2015.
  */
-public class W40kModel implements Parcelable {
+public class W40kModel implements Parcelable, Cloneable {
     private String name;
     private Integer weaponSkill;
     private Integer ballisticSkill;
@@ -246,5 +246,10 @@ public class W40kModel implements Parcelable {
 
     public void setValue(Integer value) {
         this.value = value;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

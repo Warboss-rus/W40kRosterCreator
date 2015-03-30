@@ -33,6 +33,10 @@ public class W40kUnit implements Cloneable, Parcelable {
         try {
             W40kUnit clone = (W40kUnit)super.clone();
             clone.options = new ArrayList<W40kOption>(this.options);
+            clone.models = new ArrayList<W40kModel>(this.models);
+            for(int i = 0; i < clone.models.size(); ++i) {
+                clone.models.set(i, (W40kModel)clone.models.get(i).clone());
+            }
             return clone;
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();

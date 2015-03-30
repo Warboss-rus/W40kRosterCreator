@@ -157,4 +157,17 @@
 			<option name="Lascannon sponsons" cost="40" value="80" description="2 sponson mounted lasscannons: Range: 48, S9, AP2, Heavy 1"/>
 		</options>
 	</unit>
+	<unit slot="heavy_support" name="Centurion Devastator Squad" cost="190" value="150">
+		<image>http://www.games-workshop.com/resources/catalog/product/600x620/99120101106_CenturionDevastatorSquadNEW01.jpg</image>
+		<description>Devastator Centurions are deployed for missions that require Space Marines to bring exceptional levels of firepower, such as siege warfare or bringing the firepower of a tank into confined quarters. Centurion armour suits for these missions are given to Devastators.</description>
+		<model name="Centurion" WS="4" BS="4" S="5" T="5" W="2" I="4" A="1" Ld="8" Sv="2" type="Infantry" cost="60" value="50" count="2" max="5"/>
+		<model name="Centurion" WS="4" BS="4" S="5" T="5" W="2" I="4" A="1" Ld="8" Sv="2" type="Infantry (Character)" count="1" max="1"/>
+		<options max="6" onePerModel="true">
+			<option name="Missile launcher" cost="10" value="20" description="Range: 48, S8, AP3, Heavy 1 OR Range: 48, S4, AP6, Heavy 1, Blast"/>
+		</options>
+		<options max="6" onePerModel="true">
+			<option name="Twin-linked lascannon" cost="20" value="60" description="Range: 48, S9, AP2, Heavy 1, Twin-linked"/>
+			<option name="Grav-cannon with grav-amp" cost="20" value="90" description="Range: 24, S*, AP2, Salvo 3/5, Concussive, Graviton, Grav-amp"/>
+		</options>
+	</unit>
 </units>
