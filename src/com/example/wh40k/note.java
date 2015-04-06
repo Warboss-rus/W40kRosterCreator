@@ -32,13 +32,18 @@ import java.util.*;
  */
 public class note extends Activity {
 
-    private static JsonFactory JSON_FACTORY = new JacksonFactory();
-    private static HttpTransport httpTransport = new NetHttpTransport();
+    private static JsonFactory JSON_FACTORY;
+    private static HttpTransport httpTransport;
     private static List<String> scopes = Arrays.asList("https://www.googleapis.com/auth/calendar", "https://www.googleapis.com/auth/calendar.readonly");
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.note);
+        try {
+            JSON_FACTORY = JacksonFactory.class.newInstance();
+            httpTransport = new NetHttpTransport();
+        }
+        catch (Exception e) {}
     }
 
     public void onEventCreateClick(View v) {
@@ -78,7 +83,7 @@ public class note extends Activity {
             Event createdEvent = service.events().insert("primary", event).execute();
 
         } catch (Exception e) {
-            Log.d("Calendar event creation error: ", e.getMessage());
+            Log.d("Calendar event error: ", e.getMessage());
         }
     }
     private static Credential authorize() throws Exception {

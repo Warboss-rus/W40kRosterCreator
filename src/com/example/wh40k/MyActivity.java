@@ -10,8 +10,11 @@ import java.io.InputStream;
 import android.provider.ContactsContract;
 import android.util.Log;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
+
 import android.widget.*;
 import android.view.View;
 import org.brickred.socialauth.Profile;
@@ -55,7 +58,7 @@ public class MyActivity extends Activity {
     }
 
     private SocialAuthAdapter socialAdapter;
-    private ServerCommunicator server = new ServerCommunicator("127.0.0.1:8080");
+    private ServerCommunicator server;// = new ServerCommunicator("127.0.0.1:8080");
 
     private final class ResponseListener implements DialogListener {
         public void onComplete(Bundle values) {
@@ -64,10 +67,14 @@ public class MyActivity extends Activity {
             Profile profileMap =  socialAdapter.getUserProfile();
             Log.d("Custom-UI",  "First Name = "       + profileMap.getFirstName());
             Log.d("Custom-UI",  "Last Name  = "       + profileMap.getLastName());
-            Log.d("Custom-UI",  "Email      = "       + profileMap.getEmail());
+            Log.d("Custom-UI", "Email      = " + profileMap.getEmail());
             Log.d("Custom-UI", "Profile Image URL  = " + profileMap.getProfileImageURL());
 
-            server.reportUserLogin(profileMap.getFirstName() + " " + profileMap.getLastName() + " (" + profileMap.getLocation() + ")");
+            Map<String, String> userData = new HashMap<String, String>();
+            userData.put("firstName", profileMap.getFirstName());
+            userData.put("lastName", profileMap.getLastName());
+            userData.put("email", profileMap.getEmail());
+            server.reportUserLogin(userData);
         }
 
         @Override
@@ -123,7 +130,7 @@ public class MyActivity extends Activity {
             public void onClick(View v) {
                 try {
 
-                    final InputStream is = /*getResources().getAssets().open*/openFileInput("SpaceMarines.xml");
+                    final InputStream is = getResources().getAssets().open/*openFileInput*/("SpaceMarines.xml");
                     W40kCodex codex = parser.LoadCodex(is);
                     Integer points = Integer.parseInt(spinnerPointsList.getSelectedItem().toString());
                     UnitSelection selection = new UnitSelection(points);
