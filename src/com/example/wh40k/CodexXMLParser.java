@@ -1,5 +1,6 @@
 package com.example.wh40k;
 
+import android.util.Log;
 import android.util.Xml;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -31,6 +32,21 @@ public class CodexXMLParser {
         }
         parser.require(XmlPullParser.END_TAG, "", "units");
         return codex;
+    }
+
+    public int getCodexVersion(InputStream stream) throws IOException {
+        try {
+            XmlPullParser parser = Xml.newPullParser();
+            parser.nextTag();
+            parser.require(XmlPullParser.START_TAG, "", "units");
+            String version = parser.getAttributeValue("", "version");
+            if (version != null) {
+                return Integer.parseInt(version);
+            }
+        } catch (XmlPullParserException e) {
+            Log.d("XML parser error", e.getMessage());
+        }
+        return 0;
     }
 
     W40kUnit ParseUnit(XmlPullParser parser, W40kCodex codex) throws XmlPullParserException, IOException{
