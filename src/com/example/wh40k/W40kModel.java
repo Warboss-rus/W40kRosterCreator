@@ -21,6 +21,7 @@ public class W40kModel implements Parcelable, Cloneable {
     private W40kModelType type;
     private Integer defaultCount;
     private Integer maxCount;
+    private Integer count;
     private Integer frontArmour;
     private Integer sideArmour;
     private Integer rearArmour;
@@ -158,6 +159,7 @@ public class W40kModel implements Parcelable, Cloneable {
 
     public void setDefaultCount(Integer defaultCount) {
         this.defaultCount = defaultCount;
+        this.count = defaultCount;
     }
 
     public Integer getMaxCount() {
@@ -251,5 +253,13 @@ public class W40kModel implements Parcelable, Cloneable {
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
+    }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
     }
 }

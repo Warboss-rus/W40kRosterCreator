@@ -12,25 +12,29 @@ import java.io.InputStream;
  * Created by Urgak_000 on 24.03.2015.
  */
 public class CodexXMLParser {
-    public W40kCodex LoadCodex(InputStream stream) throws XmlPullParserException, IOException {
+    public W40kCodex LoadCodex(InputStream stream) throws IOException {
         W40kCodex codex = new W40kCodex();
         XmlPullParser parser = Xml.newPullParser();
-        parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
-        parser.setInput(stream, null);
-        parser.nextTag();
-        parser.require(XmlPullParser.START_TAG, "", "units");
-        while (parser.next() != XmlPullParser.END_TAG) {
-            if (parser.getEventType() != XmlPullParser.START_TAG) continue;
-            String name = parser.getName();
-            if(name == null) continue;
-            if (name.equals("unit")) {
-                W40kUnit unit = ParseUnit(parser, codex);
-                codex.addUnit(unit);
-            } else {
-                skip(parser);
+        try {
+            parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
+            parser.setInput(stream, null);
+            parser.nextTag();
+            parser.require(XmlPullParser.START_TAG, "", "units");
+            while (parser.next() != XmlPullParser.END_TAG) {
+                if (parser.getEventType() != XmlPullParser.START_TAG) continue;
+                String name = parser.getName();
+                if (name == null) continue;
+                if (name.equals("unit")) {
+                    W40kUnit unit = ParseUnit(parser, codex);
+                    codex.addUnit(unit);
+                } else {
+                    skip(parser);
+                }
             }
+            parser.require(XmlPullParser.END_TAG, "", "units");
+        } catch (XmlPullParserException e) {
+            Log.d("CodexXMLParser", e.getMessage());
         }
-        parser.require(XmlPullParser.END_TAG, "", "units");
         return codex;
     }
 

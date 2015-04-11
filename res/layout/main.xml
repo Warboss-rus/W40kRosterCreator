@@ -37,5 +37,10 @@
             android:layout_height="wrap_content"
             android:text="Загрузить файлы рас"
             android:id="@+id/button4" android:layout_gravity="center_horizontal" android:singleLine="true"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Моя армия"
+            android:id="@+id/button6" android:layout_gravity="center_horizontal"/>
 </LinearLayout>
 

@@ -17,5 +17,7 @@
         <activity android:name=".Roster"/>
         <activity android:name=".infoUnit"/>
         <activity android:name=".note"/>
+        <activity android:name=".ArmyListActivity"/>
+        <activity android:name=".ArmyUnitOptionsActivity"/>
     </application>
 </manifest>

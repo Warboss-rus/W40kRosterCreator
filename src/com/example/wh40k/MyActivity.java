@@ -58,15 +58,15 @@ public class MyActivity extends Activity {
     }
 
     private SocialAuthAdapter socialAdapter;
-    private ServerCommunicator server;// = new ServerCommunicator("127.0.0.1:8080");
+    private ServerCommunicator server = new ServerCommunicator("http://192.168.43.109:8080/CServlet");
 
     private final class ResponseListener implements DialogListener {
         public void onComplete(Bundle values) {
             Log.d("ShareButton", "Authentication Successful");
 
             Profile profileMap =  socialAdapter.getUserProfile();
-            Log.d("Custom-UI",  "First Name = "       + profileMap.getFirstName());
-            Log.d("Custom-UI",  "Last Name  = "       + profileMap.getLastName());
+            Log.d("Custom-UI", "First Name = "       + profileMap.getFirstName());
+            Log.d("Custom-UI", "Last Name  = "       + profileMap.getLastName());
             Log.d("Custom-UI", "Email      = " + profileMap.getEmail());
             Log.d("Custom-UI", "Profile Image URL  = " + profileMap.getProfileImageURL());
 
@@ -129,7 +129,6 @@ public class MyActivity extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try {
-
                     final InputStream is = getResources().getAssets().open/*openFileInput*/("SpaceMarines.xml");
                     W40kCodex codex = parser.LoadCodex(is);
                     Integer points = Integer.parseInt(spinnerPointsList.getSelectedItem().toString());
@@ -146,9 +145,8 @@ public class MyActivity extends Activity {
                     List<W40kUnit> roster = selection.selection(codex.getUnits());
                     Intent intent = new Intent(MyActivity.this, Roster.class);
                     intent.putParcelableArrayListExtra("roster", new ArrayList<W40kUnit>(roster));
-
                     startActivity(intent);
-                } catch (Exception e) {
+                } catch (IOException e) {
                     MakeToast(e.getLocalizedMessage());
                     Log.d("UnitSelectionError: ", e.getMessage());
                 }
@@ -175,5 +173,12 @@ public class MyActivity extends Activity {
             }
         });
 
+        Button myArmy = (Button)findViewById(R.id.button6);
+            myArmy.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MyActivity.this, ArmyListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

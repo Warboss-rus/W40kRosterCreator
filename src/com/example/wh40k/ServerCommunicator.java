@@ -36,8 +36,9 @@ public class ServerCommunicator {
         url = address;
     }
 
-    public void getCodexVersion(String fileName, final MyActivity activity){
-        Thread t = new Thread(new Runnable() {
+    public void getCodexVersion(String fileName, final MyActivity activity) {
+        new Thread(new Runnable() {
+            @Override
             public void run() {
                 try {
                     HttpClient httpClient = new DefaultHttpClient();
@@ -53,11 +54,11 @@ public class ServerCommunicator {
                             activity.GetVersionComplete(Integer.parseInt(output));
                         }
                     });
-                } catch (IOException e) {
+                } catch (Exception e) {
                     Log.d("getCodexVersion", e.getMessage());
                 }
             }
-        });
+        }).start();
     }
 
     public void downloadCodex(final String fileName, final Context ctx) {
@@ -88,7 +89,7 @@ public class ServerCommunicator {
                     Log.d("downloadCodex", e.getMessage());
                 }
             }
-        });
+        }).start();
     }
 
     public void reportUserLogin(final Map<String, String> userData) {
@@ -110,6 +111,6 @@ public class ServerCommunicator {
                     Log.d("Server", e.getMessage());
                 }
             }
-        });
+        }).start();
     }
 }
