@@ -32,7 +32,7 @@ public class Roster extends Activity {
         for(W40kUnit unit : roster) {
             Map<String, String> item = new HashMap<String, String>();
             item.put("name", unit.toString());
-            item.put("options", unit.getOptions().toString());
+            item.put("options", unit.getOptionsString());
             items.add(item);
         }
 

@@ -55,29 +55,48 @@ public class ArmyListActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(ArmyListActivity.this, ArmyUnitOptionsActivity.class);
                 intent.putExtra("unit", codex.getUnits().get(unitSelector.getSelectedItemPosition()));
-                startActivity(intent);
+                startActivityForResult(intent, 0);
             }
         });
 
-        List<Map<String, String>> items = new ArrayList<Map<String, String>>();
-        for(W40kUnit unit : roster) {
-            Map<String, String> item = new HashMap<String, String>();
-            item.put("name", unit.toString());
-            item.put("options", unit.getOptions().toString());
-            items.add(item);
-        }
+        UpdateUnitList();
 
         ListView lw = (ListView)findViewById(R.id.listView3);
-        SimpleAdapter mAdapter = new SimpleAdapter(this, items, android.R.layout.simple_list_item_2, new String[]{"name", "options"}, new int[]{android.R.id.text1, android.R.id.text2});
-        lw.setAdapter(mAdapter);
         lw.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapter, View v, int position, long id) {
                 W40kUnit unit = units.get(position);
                 Intent intent = new Intent(ArmyListActivity.this, infoUnit.class);
                 intent.putExtra("unit", unit);
-                startActivity(intent);
+                intent.putExtra("index", position);
+                startActivityForResult(intent, 1);
             }
         });
+    }
+
+    private void UpdateUnitList() {
+        //Save to context
+        List<Map<String, String>> items = new ArrayList<Map<String, String>>();
+        for(W40kUnit unit : units) {
+            Map<String, String> item = new HashMap<String, String>();
+            item.put("name", unit.toString());
+            item.put("options", unit.getOptionsString());
+            items.add(item);
+        }
+
+        ListView lw = (ListView)findViewById(R.id.listView3);
+        SimpleAdapter mAdapter = new SimpleAdapter(this, items, android.R.layout.simple_list_item_2, new String[]{"name", "options"}, new int[]{android.R.id.text1, android.R.id.text2});
+        lw.setAdapter(mAdapter);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        W40kUnit unit = data.getParcelableExtra("unit");
+        if(requestCode == 0) {//new unit
+            units.add(unit);
+        } else {
+            units.set(data.getIntExtra("index", 0), unit);
+        }
+        UpdateUnitList();
     }
 }

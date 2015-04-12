@@ -3,7 +3,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Urgak_000 on 21.03.2015.
@@ -24,7 +26,7 @@ public class W40kUnit implements Cloneable, Parcelable {
         parcel.writeString(imagePath);
         parcel.writeString(description);
         parcel.writeInt(unique ? 1 : 0);
-        parcel.writeList(options);
+        parcel.writeMap(options);
         parcel.writeList(models);
         parcel.writeList(optionSlots);
     }
@@ -33,7 +35,7 @@ public class W40kUnit implements Cloneable, Parcelable {
     public W40kUnit clone() {
         try {
             W40kUnit clone = (W40kUnit)super.clone();
-            clone.options = new ArrayList<W40kOption>(this.options);
+            clone.options = new HashMap<W40kOption, Integer>(this.options);
             clone.models = new ArrayList<W40kModel>(this.models);
             for(int i = 0; i < clone.models.size(); ++i) {
                 clone.models.set(i, (W40kModel)clone.models.get(i).clone());
@@ -125,26 +127,39 @@ public class W40kUnit implements Cloneable, Parcelable {
         return (basicCost != 0) ? basicValue / basicCost : basicValue / 0.1;
     }
 
-    public List<W40kOption> getOptions() {
+    public Map<W40kOption, Integer> getOptions() {
         return options;
     }
 
     public void addOption(W40kOption option) {
-        this.options.add(option);
+        if(options.containsKey(option)) {
+            options.put(option, options.get(option) + 1);
+        } else {
+            options.put(option, 1);
+        }
+    }
+
+    public void removeOption(W40kOption option) {
+        if(options.containsKey(option)) {
+            options.put(option, options.get(option) - 1);
+            if(options.get(option) == 0) {
+                options.remove(option);
+            }
+        }
     }
 
     public Integer getCost() {
         Integer cost = this.basicCost;
-        for(W40kOption option : options) {
-            cost += option.getCost();
+        for(Map.Entry<W40kOption, Integer> option : options.entrySet()) {
+            cost += option.getKey().getCost();
         }
         return cost;
     }
 
     public Integer getValue() {
         Integer value = this.basicValue;
-        for(W40kOption option : options) {
-            value += option.getValue();
+        for(Map.Entry<W40kOption, Integer> option : options.entrySet()) {
+            value += option.getKey().getValue();
         }
         return value;
     }
@@ -215,7 +230,8 @@ public class W40kUnit implements Cloneable, Parcelable {
     private List<W40kModel> models = new ArrayList<W40kModel>();
     private List<W40kOptionSlot> optionSlots = new ArrayList<W40kOptionSlot>();
     private List<W40kCombo> combos = new ArrayList<W40kCombo>();
-    private List<W40kOption> options = new ArrayList<W40kOption>();
+    private Map<W40kOption, Integer> options = new HashMap<W40kOption, Integer>();
+    //private List<W40kOption> options = new ArrayList<W40kOption>();
     private String imagePath;
     private String description;
 
@@ -229,7 +245,7 @@ public class W40kUnit implements Cloneable, Parcelable {
             unit.imagePath = parcel.readString();
             unit.description = parcel.readString();
             unit.unique = (parcel.readInt() == 1);
-            parcel.readList(unit.options, W40kOption.class.getClassLoader());
+            parcel.readMap(unit.options, W40kOption.class.getClassLoader());
             parcel.readList(unit.models, W40kModel.class.getClassLoader());
             parcel.readList(unit.optionSlots, W40kOptionSlot.class.getClassLoader());
             return unit;
@@ -240,4 +256,13 @@ public class W40kUnit implements Cloneable, Parcelable {
             return new W40kUnit[i];
         }
     };
+
+    String getOptionsString() {
+        String result = "";
+        for(Map.Entry<W40kOption, Integer> option : options.entrySet()) {
+            String count = (option.getValue() > 1)?option.getValue().toString() + "x":"";
+            result += (result.isEmpty()?"":", ") + count + option.getKey().getName();
+        }
+        return result;
+    }
 }

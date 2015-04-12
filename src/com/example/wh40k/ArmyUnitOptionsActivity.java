@@ -2,6 +2,7 @@ package com.example.wh40k;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import android.widget.*;
 public class ArmyUnitOptionsActivity extends Activity {
 
     private W40kUnit unit;
+    private Integer index;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ public class ArmyUnitOptionsActivity extends Activity {
         setContentView(R.layout.army_unit_options);
 
         this.unit = getIntent().getParcelableExtra("unit");
+        this.index = getIntent().getIntExtra("index", 0);
 
         TableLayout tableLayout = (TableLayout)findViewById(R.id.tableLayout);
 
@@ -54,7 +57,7 @@ public class ArmyUnitOptionsActivity extends Activity {
             if(slot.getMax() > 1)
             {
                 final int slotIndex = unit.getOptionSlots().indexOf(slot);
-                for(W40kOption option : slot.getOptions()) {
+                for(final W40kOption option : slot.getOptions()) {
                     LinearLayout horizontal = new LinearLayout(this);
                     //horizontal.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
                     //horizontal.setOrientation(LinearLayout.HORIZONTAL);
@@ -66,7 +69,16 @@ public class ArmyUnitOptionsActivity extends Activity {
                     numberPicker.setMinValue(0);
                     numberPicker.setValue(0);
                     final int optionIndex = slot.getOptions().indexOf(option);
-                    //listener
+                    numberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
+                        @Override
+                        public void onValueChange(NumberPicker numberPicker, int i, int i1) {
+                            if(i1 > i) {
+                                unit.addOption(option);
+                            } else {
+                                unit.removeOption(option);
+                            }
+                        }
+                    });
                     horizontal.addView(numberPicker);
                     tableRow.addView(horizontal);
                 }
@@ -99,14 +111,32 @@ public class ArmyUnitOptionsActivity extends Activity {
         }
     }
 
-    RadioButton createRadioButton(W40kOption option) {
+    private RadioButton createRadioButton(final W40kOption option) {
         RadioButton radioButton = new RadioButton(this);
         if(option == null) {
             radioButton.setText("None");
         } else {
             radioButton.setText(option.toString());
         }
-        //listener
+        radioButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b) {
+                    unit.addOption(option);
+                } else {
+                    unit.removeOption(option);
+                }
+            }
+        });
         return radioButton;
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent returnIntent = new Intent();
+        returnIntent.putExtra("unit", unit);
+        returnIntent.putExtra("index", index);
+        setResult(RESULT_OK, returnIntent);
+        finish();
     }
 }

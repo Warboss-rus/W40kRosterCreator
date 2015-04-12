@@ -129,6 +129,7 @@ public class MyActivity extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try {
+                    //if checkBox is checked, use saved data instead of loading the codex
                     final InputStream is = getResources().getAssets().open/*openFileInput*/("SpaceMarines.xml");
                     W40kCodex codex = parser.LoadCodex(is);
                     Integer points = Integer.parseInt(spinnerPointsList.getSelectedItem().toString());
@@ -166,12 +167,12 @@ public class MyActivity extends Activity {
 
         socialAdapter.enable(login);
 
-        Button downloadCodices = (Button)findViewById(R.id.button4);
+        /*Button downloadCodices = (Button)findViewById(R.id.button4);
         downloadCodices.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 server.getCodexVersion("SpaceMarines.xml", MyActivity.this);
             }
-        });
+        });*/
 
         Button myArmy = (Button)findViewById(R.id.button6);
             myArmy.setOnClickListener(new View.OnClickListener() {

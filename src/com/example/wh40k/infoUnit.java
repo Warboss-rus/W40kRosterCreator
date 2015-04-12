@@ -81,12 +81,13 @@ public class infoUnit extends Activity {
             lastType = model.getType().getBasicType();
         }
 
-        List<W40kOption> options = unit.getOptions();
+        Map<W40kOption, Integer> options = unit.getOptions();
         List<Map<String, String>> items = new ArrayList<Map<String, String>>();
-        for(W40kOption option : options) {
+        for(Map.Entry<W40kOption, Integer> option : options.entrySet()) {
             Map<String, String> item = new HashMap<String, String>();
-            item.put("name", option.getName());
-            item.put("description", option.getDescription());
+            String count = (option.getValue() > 1)?option.getValue().toString() + "x":"";
+            item.put("name", count + option.getKey().getName());
+            item.put("description", option.getKey().getDescription());
             items.add(item);
         }
         SimpleAdapter adapter = new SimpleAdapter(this, items, android.R.layout.simple_list_item_2, new String[]{"name", "description"}, new int[]{android.R.id.text1, android.R.id.text2});

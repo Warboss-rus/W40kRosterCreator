@@ -23,6 +23,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner2"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Только юниты из моей армии"
+            android:id="@+id/checkBox" android:singleLine="false"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -32,11 +37,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button3" android:layout_gravity="center_horizontal" android:text="Войти"/>
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Загрузить файлы рас"
-            android:id="@+id/button4" android:layout_gravity="center_horizontal" android:singleLine="true"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
