@@ -2,14 +2,16 @@ package com.example.wh40k;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import java.io.IOException;
 import java.io.InputStream;
 
-import android.provider.ContactsContract;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
+import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
@@ -17,6 +19,9 @@ import java.util.Map;
 
 import android.widget.*;
 import android.view.View;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import org.brickred.socialauth.Profile;
 import org.brickred.socialauth.android.DialogListener;
 import org.brickred.socialauth.android.SocialAuthAdapter;
@@ -48,6 +53,9 @@ public class MyActivity extends Activity {
             "Tau Empire",
             "Tyranids"
     };
+
+    private SharedPreferences prefs;
+    private Gson gson = new GsonBuilder().create();
 
     private CodexXMLParser parser = new CodexXMLParser();
 
@@ -110,6 +118,8 @@ public class MyActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, army);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -129,9 +139,6 @@ public class MyActivity extends Activity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try {
-                    //if checkBox is checked, use saved data instead of loading the codex
-                    final InputStream is = getResources().getAssets().open/*openFileInput*/("SpaceMarines.xml");
-                    W40kCodex codex = parser.LoadCodex(is);
                     Integer points = Integer.parseInt(spinnerPointsList.getSelectedItem().toString());
                     UnitSelection selection = new UnitSelection(points);
                     selection.setMaxHq(2);
@@ -143,7 +150,29 @@ public class MyActivity extends Activity {
                     selection.setMaxHeavySupport(3);
                     selection.setMaxFort(1);
                     selection.setMaxLoW(1);
-                    List<W40kUnit> roster = selection.selection(codex.getUnits());
+                    List<W40kUnit> roster;
+                    CheckBox useMyArmy = (CheckBox)findViewById(R.id.checkBox);
+                    if(useMyArmy.isChecked()) {
+                        String race = "Space Marines";//((Spinner) findViewById(R.id.spinner)).getSelectedItem().toString();
+                        String savedValue = prefs.getString("myArmy" + race, "");
+                        List<W40kUnit> units;
+                        if(savedValue.equals("")) {
+                            units = new ArrayList<W40kUnit>();
+                        } else {
+                            try {
+                                Type listType = new TypeToken<ArrayList<W40kUnit>>(){}.getType();
+                                units = gson.fromJson(savedValue, listType);
+                            } catch (Exception e) {
+                                Log.d("GSON error", e.getLocalizedMessage());
+                                units = new ArrayList<W40kUnit>();
+                            }
+                        }
+                        roster = selection.selection(units);//Replace it with another call that will ignore optionSlots
+                    } else {
+                        final InputStream is = getResources().getAssets().open/*openFileInput*/("SpaceMarines.xml");
+                        W40kCodex codex = parser.LoadCodex(is);
+                        roster = selection.selection(codex.getUnits());
+                    }
                     Intent intent = new Intent(MyActivity.this, Roster.class);
                     intent.putParcelableArrayListExtra("roster", new ArrayList<W40kUnit>(roster));
                     startActivity(intent);

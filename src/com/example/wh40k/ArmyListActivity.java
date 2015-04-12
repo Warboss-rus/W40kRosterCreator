@@ -2,13 +2,19 @@ package com.example.wh40k;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.*;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,6 +27,8 @@ public class ArmyListActivity extends Activity {
 
     private List<W40kUnit> units;
     private W40kCodex codex;
+    private Gson gson = new GsonBuilder().create();
+    private SharedPreferences prefs;
 
     private String [] army = {
             "Space Marines"
@@ -31,13 +39,14 @@ public class ArmyListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.army_list);
 
+        prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, army);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         Spinner spinnerArmyList = (Spinner) findViewById(R.id.spinnerRace);
         spinnerArmyList.setAdapter(adapter);
 
-        List<W40kUnit> roster = new ArrayList<W40kUnit>();
-        this.units = roster;
+        LoadMyArmy("Space Marines");
 
         CodexXMLParser parser = new CodexXMLParser();
         try {
@@ -74,8 +83,26 @@ public class ArmyListActivity extends Activity {
         });
     }
 
+    private void LoadMyArmy(String armyName) {
+        String savedValue = prefs.getString("myArmy" + armyName, "");
+        if(savedValue.equals("")) {
+            units = new ArrayList<W40kUnit>();
+        } else {
+            try {
+                Type listType = new TypeToken<ArrayList<W40kUnit>>(){}.getType();
+                units = gson.fromJson(savedValue, listType);
+            } catch (Exception e) {
+                Log.d("GSON error", e.getLocalizedMessage());
+                units = new ArrayList<W40kUnit>();
+            }
+        }
+    }
+
     private void UpdateUnitList() {
         //Save to context
+        Spinner spinnerArmyList = (Spinner) findViewById(R.id.spinnerRace);
+        String jsonUnits = gson.toJson(units);
+        prefs.edit().putString("myArmy" + spinnerArmyList.getSelectedItem().toString(), jsonUnits).apply();
         List<Map<String, String>> items = new ArrayList<Map<String, String>>();
         for(W40kUnit unit : units) {
             Map<String, String> item = new HashMap<String, String>();
