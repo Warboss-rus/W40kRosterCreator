@@ -1,101 +1,153 @@
 package com.example.wh40k;
 
+import android.accounts.AccountManager;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.DatePicker;
-import android.widget.EditText;
-import com.google.api.client.auth.oauth2.Credential;
-import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
-import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
-import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
-import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
+import android.widget.Toast;
+import com.google.android.gms.auth.GooglePlayServicesAvailabilityException;
+import com.google.android.gms.auth.UserRecoverableAuthException;
+import com.google.android.gms.common.AccountPicker;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.api.client.extensions.android.http.AndroidHttp;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.api.client.json.JsonFactory;
-import com.google.api.client.json.jackson.JacksonFactory;
-import com.google.api.client.util.DateTime;
-import com.google.api.services.calendar.Calendar;
-import com.google.api.services.calendar.model.Event;
-import com.google.api.services.calendar.model.EventDateTime;
+import com.google.api.client.json.gson.GsonFactory;
+import com.google.api.client.json.jackson2.JacksonFactory;
+import com.google.api.client.util.ExponentialBackOff;
+import com.google.api.services.calendar.CalendarScopes;
 
-import java.io.InputStreamReader;
-import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Arrays;
 
 /**
  * Created by Dertkaes on 3/26/2015.
  */
 public class note extends Activity {
 
-    private static JsonFactory JSON_FACTORY;
-    private static HttpTransport httpTransport;
-    private static List<String> scopes = Arrays.asList("https://www.googleapis.com/auth/calendar", "https://www.googleapis.com/auth/calendar.readonly");
+    private static final String PREF_ACCOUNT_NAME = "accountName";
+
+    static final int REQUEST_CODE_PICK_ACCOUNT = 1000;
+    static final int REQUEST_CODE_RECOVER_FROM_AUTH_ERROR = 1001;
+    static final int REQUEST_CODE_RECOVER_FROM_PLAY_SERVICES_ERROR = 1002;
+
+    String mEmail; // Received from newChooseAccountIntent(); passed to getToken()
+    private final static String mScopes = "oauth2:" + CalendarScopes.CALENDAR + " " + CalendarScopes.CALENDAR_READONLY;
+    private static final String[] SCOPES = {CalendarScopes.CALENDAR, CalendarScopes.CALENDAR_READONLY};
+
+    com.google.api.services.calendar.Calendar mService;
+    GoogleAccountCredential credential;
+    final HttpTransport transport = new NetHttpTransport();
+    final JsonFactory jsonFactory = new JacksonFactory();
+
+    private void pickUserAccount() {
+        String[] accountTypes = new String[]{"com.google"};
+        Intent intent = AccountPicker.newChooseAccountIntent(null, null,
+                accountTypes, false, null, null, null, null);
+        startActivityForResult(intent, REQUEST_CODE_PICK_ACCOUNT);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == REQUEST_CODE_PICK_ACCOUNT) {
+            // Receiving a result from the AccountPicker
+            if (resultCode == RESULT_OK && data != null &&
+                    data.getExtras() != null) {
+                mEmail = data.getStringExtra(AccountManager.KEY_ACCOUNT_NAME);
+                // With the account name acquired, go get the auth token
+                if (mEmail != null) {
+                    credential.setSelectedAccountName(mEmail);
+                    SharedPreferences settings =
+                            getPreferences(Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = settings.edit();
+                    editor.putString(PREF_ACCOUNT_NAME, mEmail);
+                    editor.commit();
+                    addEvent();
+                }
+            } else if (resultCode == RESULT_CANCELED) {
+                // The account picker dialog closed without selecting an account.
+                // Notify users that they must pick an account to proceed.
+                Toast.makeText(this, "Account didn't selected", Toast.LENGTH_SHORT).show();
+            }
+        } else if ((requestCode == REQUEST_CODE_RECOVER_FROM_AUTH_ERROR ||
+                requestCode == REQUEST_CODE_RECOVER_FROM_PLAY_SERVICES_ERROR)
+                && resultCode == RESULT_OK) {
+            // Receiving a result that follows a GoogleAuthException, try auth again
+            addEvent();
+        }
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.note);
-        try {
-            JSON_FACTORY = JacksonFactory.class.newInstance();
-            httpTransport = new NetHttpTransport();
-        }
-        catch (Exception e) {}
+
+        SharedPreferences settings = getPreferences(Context.MODE_PRIVATE);
+        mEmail = settings.getString(PREF_ACCOUNT_NAME, null);
+        credential = GoogleAccountCredential.usingOAuth2(
+                getApplicationContext(), Arrays.asList(SCOPES))
+                //.setBackOff(new ExponentialBackOff())
+                .setSelectedAccountName(settings.getString(PREF_ACCOUNT_NAME, null));
+
+        mService = new com.google.api.services.calendar.Calendar.Builder(
+                transport, jsonFactory, credential)
+                .setApplicationName("Wh40k")
+                .build();
     }
 
     public void onEventCreateClick(View v) {
-        try {
-            Credential credential = authorize();
-            /*GoogleAccountCredential credential =
-                    GoogleAccountCredential.usingOAuth2(this, scopes);
-            SharedPreferences settings = getPreferences(Context.MODE_PRIVATE);
-            credential.setSelectedAccountName(settings.getString("rostergovna@gmail.com", null));
-            // Tasks client
-            Task service =
-                    new com.google.api.services.tasks.Tasks.Builder(httpTransport, jsonFactory, credential)
-                            .setApplicationName("Google-TasksAndroidSample/1.0").build();*/
+        addEvent();
+    }
 
-            Calendar service = new Calendar.Builder(httpTransport, JSON_FACTORY, credential)
-                .setApplicationName("applicationName/1.0").build();
-
-            Event event = new Event();
-            EditText desc = (EditText)findViewById(R.id.editText);
-            DatePicker datePicker = (DatePicker)findViewById(R.id.datePicker);
-
-            event.setSummary(desc.getText().toString());
-            event.setLocation("Somewhere");
-
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-            String dateString = sdf.format(datePicker);
-
-            Date startDate = new Date();
-            DateTime start = new DateTime(dateString);
-            event.setStart(new EventDateTime().setDateTime(start));
-
-            Date endDate = new Date(start.getValue() + 3600000);
-            DateTime end = new DateTime(endDate, TimeZone.getTimeZone("UTC"));
-            event.setEnd(new EventDateTime().setDateTime(end));
-
-            // Insert the new event
-            Event createdEvent = service.events().insert("primary", event).execute();
-
-        } catch (Exception e) {
-            Log.d("Calendar event error: ", e.getMessage());
+    private void addEvent() {
+        if (mEmail == null) {
+            pickUserAccount();
+        } else {
+            if (isDeviceOnline()) {
+                new GoogleAuthorizeTask(this, mEmail, mScopes).execute();
+            } else {
+                Toast.makeText(this, "Connection unavailable", Toast.LENGTH_LONG).show();
+            }
         }
     }
-    private static Credential authorize() throws Exception {
-        // load client secrets
-        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY,
-                new InputStreamReader(note.class.getResourceAsStream("client_secrets.json")));
-        // set up authorization code flow
-        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
-                httpTransport, JSON_FACTORY, clientSecrets,
-                scopes)
-                .build();
-        // authorize
-        return new AuthorizationCodeInstalledApp(flow, new LocalServerReceiver()).authorize("user");
+
+    private Boolean isDeviceOnline() {
+        ConnectivityManager connMgr = (ConnectivityManager)
+                getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        return (networkInfo != null && networkInfo.isConnected());
+    }
+
+    public void handleException(final Exception e) {
+        // Because this call comes from the AsyncTask, we must ensure that the following
+        // code instead executes on the UI thread.
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (e instanceof GooglePlayServicesAvailabilityException) {
+                    // The Google Play services APK is old, disabled, or not present.
+                    // Show a dialog created by Google Play services that allows
+                    // the user to update the APK
+                    int statusCode = ((GooglePlayServicesAvailabilityException)e)
+                            .getConnectionStatusCode();
+                            Dialog dialog = GooglePlayServicesUtil.getErrorDialog(statusCode, note.this, REQUEST_CODE_RECOVER_FROM_PLAY_SERVICES_ERROR);
+                    dialog.show();
+                } else if (e instanceof UserRecoverableAuthException) {
+                    // Unable to authenticate, such as when the user has not yet granted
+                    // the app access to the account, but the user can fix this.
+                    // Forward the user to an activity in Google Play services.
+                    Intent intent = ((UserRecoverableAuthException)e).getIntent();
+                    startActivityForResult(intent,
+                            REQUEST_CODE_RECOVER_FROM_PLAY_SERVICES_ERROR);
+                }
+            }
+        });
     }
 }
