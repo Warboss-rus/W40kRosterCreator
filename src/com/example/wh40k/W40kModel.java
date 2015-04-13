@@ -49,6 +49,7 @@ public class W40kModel implements Parcelable, Cloneable {
         parcel.writeInt((invulSave == null)?0:invulSave);
         parcel.writeValue(type);
         parcel.writeInt(defaultCount);
+        parcel.writeInt(count);
         parcel.writeInt(maxCount);
         parcel.writeInt((frontArmour == null)?0:frontArmour);
         parcel.writeInt((sideArmour == null)?0:sideArmour);
@@ -219,6 +220,7 @@ public class W40kModel implements Parcelable, Cloneable {
             model.invulSave = parcel.readInt();
             model.type = (W40kModelType)parcel.readValue(W40kModelType.class.getClassLoader());
             model.defaultCount = parcel.readInt();
+            model.count = parcel.readInt();
             model.maxCount = parcel.readInt();
             model.frontArmour = parcel.readInt();
             model.sideArmour = parcel.readInt();

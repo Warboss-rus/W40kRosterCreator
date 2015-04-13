@@ -1,12 +1,9 @@
 package com.example.wh40k;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.*;
 
 /**
@@ -37,7 +34,7 @@ public class ArmyUnitOptionsActivity extends Activity {
                 NumberPicker numberPicker = new NumberPicker(this);
                 numberPicker.setMaxValue(model.getMaxCount());
                 numberPicker.setMinValue(model.getDefaultCount());
-                numberPicker.setValue(model.getDefaultCount());
+                numberPicker.setValue(model.getCount());
                 final int index = unit.getModels().indexOf(model);
                 numberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
                     @Override
@@ -67,7 +64,7 @@ public class ArmyUnitOptionsActivity extends Activity {
                     NumberPicker numberPicker = new NumberPicker(this);
                     numberPicker.setMaxValue(slot.getMax());
                     numberPicker.setMinValue(0);
-                    numberPicker.setValue(0);
+                    numberPicker.setValue(unit.getOptions().get(option));
                     final int optionIndex = slot.getOptions().indexOf(option);
                     numberPicker.setOnValueChangedListener(new NumberPicker.OnValueChangeListener() {
                         @Override
@@ -88,6 +85,7 @@ public class ArmyUnitOptionsActivity extends Activity {
                 if(slot.getOptions().size() == 1) {
                     CheckBox checkBox = new CheckBox(this);
                     checkBox.setText(slot.getOptions().get(0).getName());
+                    checkBox.setChecked(unit.getOptions().containsKey(slot.getOptions().get(0)));
                     checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                         @Override
                         public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -109,14 +107,32 @@ public class ArmyUnitOptionsActivity extends Activity {
             }
             tableLayout.addView(tableRow);
         }
+
+        Button delete = new Button(this);
+        delete.setText("Delete");
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent returnIntent = new Intent();
+                //returnIntent.putExtra("unit", (W40kUnit)null);
+                returnIntent.putExtra("index", index);
+                setResult(RESULT_OK, returnIntent);
+                finish();
+            }
+        });
+        tableLayout.addView(delete);
     }
 
     private RadioButton createRadioButton(final W40kOption option) {
         RadioButton radioButton = new RadioButton(this);
         if(option == null) {
             radioButton.setText("None");
+            radioButton.setChecked(true);
         } else {
             radioButton.setText(option.toString());
+            if(unit.getOptions().containsKey(option)) {
+                radioButton.setChecked(true);
+            }
         }
         radioButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

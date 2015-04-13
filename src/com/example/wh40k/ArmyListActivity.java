@@ -75,7 +75,7 @@ public class ArmyListActivity extends Activity {
             @Override
             public void onItemClick(AdapterView<?> adapter, View v, int position, long id) {
                 W40kUnit unit = units.get(position);
-                Intent intent = new Intent(ArmyListActivity.this, infoUnit.class);
+                Intent intent = new Intent(ArmyListActivity.this, ArmyUnitOptionsActivity.class);
                 intent.putExtra("unit", unit);
                 intent.putExtra("index", position);
                 startActivityForResult(intent, 1);
@@ -93,6 +93,7 @@ public class ArmyListActivity extends Activity {
                 units = gson.fromJson(savedValue, listType);
             } catch (Exception e) {
                 Log.d("GSON error", e.getLocalizedMessage());
+                Toast.makeText(getApplicationContext(), e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
                 units = new ArrayList<W40kUnit>();
             }
         }
@@ -119,10 +120,16 @@ public class ArmyListActivity extends Activity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         W40kUnit unit = data.getParcelableExtra("unit");
-        if(requestCode == 0) {//new unit
-            units.add(unit);
+        if(unit == null) {
+            if(requestCode != 0) {
+                units.remove(data.getIntExtra("index", 0));
+            }
         } else {
-            units.set(data.getIntExtra("index", 0), unit);
+            if (requestCode == 0) {//new unit
+                units.add(unit);
+            } else {
+                units.set(data.getIntExtra("index", 0), unit);
+            }
         }
         UpdateUnitList();
     }

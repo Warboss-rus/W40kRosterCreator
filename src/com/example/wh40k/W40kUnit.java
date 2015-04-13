@@ -153,6 +153,9 @@ public class W40kUnit implements Cloneable, Parcelable {
         for(Map.Entry<W40kOption, Integer> option : options.entrySet()) {
             cost += option.getKey().getCost();
         }
+        for(W40kModel model : models) {
+            cost += (model.getCount() - model.getDefaultCount()) * model.getCost();
+        }
         return cost;
     }
 
@@ -160,6 +163,9 @@ public class W40kUnit implements Cloneable, Parcelable {
         Integer value = this.basicValue;
         for(Map.Entry<W40kOption, Integer> option : options.entrySet()) {
             value += option.getKey().getValue();
+        }
+        for(W40kModel model : models) {
+            value += (model.getCount() - model.getDefaultCount()) * model.getValue();
         }
         return value;
     }
