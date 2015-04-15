@@ -63,7 +63,7 @@ public class ArmyListActivity extends Activity {
         addNew.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(ArmyListActivity.this, ArmyUnitOptionsActivity.class);
-                intent.putExtra("unit", codex.getUnits().get(unitSelector.getSelectedItemPosition()));
+                intent.putExtra("unit", codex.getUnits().get(unitSelector.getSelectedItemPosition()).clone());
                 startActivityForResult(intent, 0);
             }
         });

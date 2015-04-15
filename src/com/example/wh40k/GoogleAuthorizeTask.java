@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TimePicker;
 import android.widget.Toast;
 import com.google.android.gms.auth.GoogleAuthException;
 import com.google.android.gms.auth.GoogleAuthUtil;
@@ -62,6 +63,7 @@ public class GoogleAuthorizeTask extends AsyncTask<Void, Void, Void>{
                 Event event = new Event();
                 EditText desc = (EditText)mActivity.findViewById(R.id.editText);
                 DatePicker datePicker = (DatePicker)mActivity.findViewById(R.id.datePicker);
+                TimePicker timePicker = (TimePicker)mActivity.findViewById(R.id.timePicker);
 
                 event.setSummary(desc.getText().toString());
                 event.setLocation("Somewhere");
@@ -69,13 +71,15 @@ public class GoogleAuthorizeTask extends AsyncTask<Void, Void, Void>{
                 DateTime start = new DateTime(datePicker.getCalendarView().getDate());
                 event.setStart(new EventDateTime().setDateTime(start));
 
-                Date endDate = new Date(start.getValue() + 3600000);
+                Date endDate = new Date(start.getValue() + 24*3600000);
                 DateTime end = new DateTime(endDate, TimeZone.getTimeZone("UTC"));
                 event.setEnd(new EventDateTime().setDateTime(end));
 
                 // Insert the new event
                 Event createdEvent = mActivity.mService.events().insert("primary", event).execute();
                 createdEvent.getDescription();
+
+                Toast.makeText(mActivity, "Calendar event created successfully", Toast.LENGTH_LONG).show();
         } catch (UserRecoverableAuthIOException userRecoverableException) {
             mActivity.startActivityForResult(
                     userRecoverableException.getIntent(), mActivity.REQUEST_CODE_RECOVER_FROM_AUTH_ERROR);
