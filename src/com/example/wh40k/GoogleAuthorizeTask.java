@@ -31,6 +31,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -62,32 +63,38 @@ public class GoogleAuthorizeTask extends AsyncTask<Void, Void, Void>{
 
                 Event event = new Event();
                 EditText desc = (EditText)mActivity.findViewById(R.id.editText);
+                EditText location = (EditText)mActivity.findViewById(R.id.editText2);
                 DatePicker datePicker = (DatePicker)mActivity.findViewById(R.id.datePicker);
                 TimePicker timePicker = (TimePicker)mActivity.findViewById(R.id.timePicker);
 
                 event.setSummary(desc.getText().toString());
-                event.setLocation("Somewhere");
+                event.setLocation(location.getText().toString());
 
-                DateTime start = new DateTime(datePicker.getCalendarView().getDate());
+                //DateTime start = new DateTime(datePicker.getCalendarView().getDate());
+                String dateStart = datePicker.getYear() + "-" + datePicker.getMonth() + "-" + datePicker.getDayOfMonth() + " " +
+                        timePicker.getCurrentHour() + ":" + timePicker.getCurrentMinute();
+                SimpleDateFormat  format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+                DateTime start = new DateTime(format.parse(dateStart));
                 event.setStart(new EventDateTime().setDateTime(start));
 
-                Date endDate = new Date(start.getValue() + 24*3600000);
+                Date endDate = new Date(start.getValue() + 4*60*60*1000);
                 DateTime end = new DateTime(endDate, TimeZone.getTimeZone("UTC"));
                 event.setEnd(new EventDateTime().setDateTime(end));
 
                 // Insert the new event
                 Event createdEvent = mActivity.mService.events().insert("primary", event).execute();
                 createdEvent.getDescription();
-
-                Toast.makeText(mActivity, "Calendar event created successfully", Toast.LENGTH_LONG).show();
         } catch (UserRecoverableAuthIOException userRecoverableException) {
             mActivity.startActivityForResult(
                     userRecoverableException.getIntent(), mActivity.REQUEST_CODE_RECOVER_FROM_AUTH_ERROR);
+            Toast.makeText(mActivity, "Заметка успешно добавлена", Toast.LENGTH_LONG).show();
         } catch (IOException e) {
             // The fetchToken() method handles Google-specific exceptions,
             // so this indicates something went wrong at a higher level.
             // TIP: Check for network connectivity before starting the AsyncTask.
-            Toast.makeText(mActivity, e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(mActivity, e.getMessage(), Toast.LENGTH_LONG).show();
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
         return null;
     }

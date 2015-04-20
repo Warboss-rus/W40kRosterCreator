@@ -19,6 +19,7 @@ import java.util.Map;
 
 import android.widget.*;
 import android.view.View;
+import com.gc.materialdesign.views.ButtonRectangle;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -83,6 +84,9 @@ public class MyActivity extends Activity {
             userData.put("lastName", profileMap.getLastName());
             userData.put("email", profileMap.getEmail());
             server.reportUserLogin(userData);
+
+            findViewById(R.id.checkBox).setVisibility(View.VISIBLE);
+            findViewById(R.id.button6).setVisibility(View.VISIBLE);
         }
 
         @Override
@@ -135,7 +139,7 @@ public class MyActivity extends Activity {
         spinnerPointsList.setAdapter(adapter1);
         // заголовок
         spinnerPointsList.setPrompt("Points");
-        Button button = (Button) findViewById(R.id.button);
+        ButtonRectangle button = (ButtonRectangle) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try {
@@ -151,8 +155,8 @@ public class MyActivity extends Activity {
                     selection.setMaxFort(1);
                     selection.setMaxLoW(1);
                     List<W40kUnit> roster;
-                    CheckBox useMyArmy = (CheckBox)findViewById(R.id.checkBox);
-                    if(useMyArmy.isChecked()) {
+                    com.gc.materialdesign.views.CheckBox useMyArmy = (com.gc.materialdesign.views.CheckBox)findViewById(R.id.checkBox);
+                    if(useMyArmy.isCheck()) {
                         String race = "Space Marines";//((Spinner) findViewById(R.id.spinner)).getSelectedItem().toString();
                         String savedValue = prefs.getString("myArmy" + race, "");
                         List<W40kUnit> units;
@@ -183,7 +187,7 @@ public class MyActivity extends Activity {
             }
         });
 
-        Button login = (Button)findViewById(R.id.button3);
+        ButtonRectangle login = (ButtonRectangle)findViewById(R.id.button3);
         socialAdapter = new SocialAuthAdapter(new ResponseListener());
         socialAdapter.addProvider(SocialAuthAdapter.Provider.FACEBOOK, R.drawable.facebook);
         socialAdapter.addProvider(SocialAuthAdapter.Provider.TWITTER, R.drawable.twitter);
@@ -203,7 +207,7 @@ public class MyActivity extends Activity {
             }
         });*/
 
-        Button myArmy = (Button)findViewById(R.id.button6);
+        ButtonRectangle myArmy = (ButtonRectangle)findViewById(R.id.button6);
             myArmy.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(MyActivity.this, ArmyListActivity.class);

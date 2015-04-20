@@ -21,5 +21,6 @@
     <orderEntry type="library" exported="" scope="PROVIDED" name="google_libs" level="project" />
     <orderEntry type="library" exported="" name="libs" level="project" />
     <orderEntry type="module" module-name="google-play-services_lib" exported="" />
+    <orderEntry type="module" module-name="MaterialDesign" exported="" />
   </component>
 </module>

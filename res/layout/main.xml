@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
+              android:background="#FFFFFF"
         >
-
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Армия"
+            android:textColor="#1E88E5"
             android:id="@+id/textView"/>
     <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#1E88E5"
             android:id="@+id/spinner"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Выберете размер армии для участия в событии"
+            android:textColor="#1E88E5"
             android:id="@+id/textView2"/>
     <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#1E88E5"
             android:id="@+id/spinner2"/>
-    <CheckBox
+    <com.gc.materialdesign.views.CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Только юниты из моей армии"
-            android:id="@+id/checkBox" android:singleLine="false"/>
-    <Button
+            android:id="@+id/checkBox" android:singleLine="false" android:enabled="false" android:visibility="gone"/>
+    <com.gc.materialdesign.views.ButtonRectangle
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Составить ростер"
             android:id="@+id/button" android:layout_gravity="center_horizontal"/>
-    <Button
+    <com.gc.materialdesign.views.ButtonRectangle
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button3" android:layout_gravity="center_horizontal" android:text="Войти"/>
-    <Button
+    <com.gc.materialdesign.views.ButtonRectangle
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Моя армия"
-            android:id="@+id/button6" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/button6" android:layout_gravity="center_horizontal" android:visibility="gone"/>
 </LinearLayout>
 

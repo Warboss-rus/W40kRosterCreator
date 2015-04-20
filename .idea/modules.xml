@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../MaterialDesignLibrary-master/MaterialDesign/MaterialDesign.iml" filepath="$PROJECT_DIR$/../MaterialDesignLibrary-master/MaterialDesign/MaterialDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/google-play-services_lib/google-play-services_lib.iml" filepath="$PROJECT_DIR$/google-play-services_lib/google-play-services_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/wh40k.iml" filepath="$PROJECT_DIR$/wh40k.iml" />
     </modules>
   </component>
