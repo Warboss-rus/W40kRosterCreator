@@ -49,6 +49,15 @@ public class Roster extends Activity {
             }
 
         });
+
+        Button note = (Button)findViewById(R.id.button4);
+        note.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Roster.this, note.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

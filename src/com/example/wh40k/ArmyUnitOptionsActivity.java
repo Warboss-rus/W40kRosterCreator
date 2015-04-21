@@ -127,12 +127,8 @@ public class ArmyUnitOptionsActivity extends Activity {
         RadioButton radioButton = new RadioButton(this);
         if(option == null) {
             radioButton.setText("None");
-            radioButton.setChecked(true);
         } else {
             radioButton.setText(option.toString());
-            if(unit.getOptions().containsKey(option)) {
-                radioButton.setChecked(true);
-            }
         }
         radioButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

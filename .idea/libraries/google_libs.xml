@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="google_libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libs/google_libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/libs/google_libs" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/libs/google_libs" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/google_libs" recursive="false" type="SOURCES" />
+  </library>
+</component>

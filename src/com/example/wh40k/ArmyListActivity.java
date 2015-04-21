@@ -93,7 +93,7 @@ public class ArmyListActivity extends Activity {
                 units = gson.fromJson(savedValue, listType);
             } catch (Exception e) {
                 Log.d("GSON error", e.getLocalizedMessage());
-                Toast.makeText(getApplicationContext(), e.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_LONG).show();
                 units = new ArrayList<W40kUnit>();
             }
         }

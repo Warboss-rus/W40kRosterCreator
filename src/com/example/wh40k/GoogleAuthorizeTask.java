@@ -71,7 +71,7 @@ public class GoogleAuthorizeTask extends AsyncTask<Void, Void, Void>{
                 event.setLocation(location.getText().toString());
 
                 //DateTime start = new DateTime(datePicker.getCalendarView().getDate());
-                String dateStart = datePicker.getYear() + "-" + datePicker.getMonth() + "-" + datePicker.getDayOfMonth() + " " +
+                String dateStart = datePicker.getYear() + "-" + (datePicker.getMonth() + 1) + "-" + datePicker.getDayOfMonth() + " " +
                         timePicker.getCurrentHour() + ":" + timePicker.getCurrentMinute();
                 SimpleDateFormat  format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
                 DateTime start = new DateTime(format.parse(dateStart));
@@ -84,10 +84,10 @@ public class GoogleAuthorizeTask extends AsyncTask<Void, Void, Void>{
                 // Insert the new event
                 Event createdEvent = mActivity.mService.events().insert("primary", event).execute();
                 createdEvent.getDescription();
+                //Toast.makeText(mActivity.getApplicationContext(), "Заметка успешно добавлена", Toast.LENGTH_LONG).show();
         } catch (UserRecoverableAuthIOException userRecoverableException) {
             mActivity.startActivityForResult(
                     userRecoverableException.getIntent(), mActivity.REQUEST_CODE_RECOVER_FROM_AUTH_ERROR);
-            Toast.makeText(mActivity, "Заметка успешно добавлена", Toast.LENGTH_LONG).show();
         } catch (IOException e) {
             // The fetchToken() method handles Google-specific exceptions,
             // so this indicates something went wrong at a higher level.

@@ -20,6 +20,7 @@ import java.util.Map;
 import android.widget.*;
 import android.view.View;
 import com.gc.materialdesign.views.ButtonRectangle;
+import com.gc.materialdesign.widgets.Dialog;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -87,6 +88,7 @@ public class MyActivity extends Activity {
 
             findViewById(R.id.checkBox).setVisibility(View.VISIBLE);
             findViewById(R.id.button6).setVisibility(View.VISIBLE);
+            findViewById(R.id.button3).setVisibility(View.GONE);
         }
 
         @Override
@@ -123,6 +125,8 @@ public class MyActivity extends Activity {
         setContentView(R.layout.main);
 
         prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        Dialog dlg = new Dialog(this, "Добро пожаловать","Приветствуем вас в приложении для составления расписок для настольной тактической игры Warhammer 40000. В этом приложении вы сможете хранить состав своей арммии и подобрать оптимальную расписку");
+        dlg.show();
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, army);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
