@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="google-api-services-calendar-v3-rev87-1.19.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-calendar/v3-rev87-1.19.0/3343601b194726347ff30ad596880fc321654538/google-api-services-calendar-v3-rev87-1.19.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-calendar/v3-rev87-1.19.0/b36312b98ae8f31ae7e0effd72ce92a16d8248eb/google-api-services-calendar-v3-rev87-1.19.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

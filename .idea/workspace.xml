@@ -36,21 +36,373 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d868532-04dc-49f0-bdf8-f93f1dba14f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wh40k/wh40k.apk" afterPath="$PROJECT_DIR$/out/production/wh40k/wh40k.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/wh40k/wh40k.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/wh40k/wh40k.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/wh40k/ArmyListActivity.java" afterPath="$PROJECT_DIR$/src/com/example/wh40k/ArmyListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/wh40k/ArmyUnitOptionsActivity.java" afterPath="$PROJECT_DIR$/src/com/example/wh40k/ArmyUnitOptionsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/wh40k/GoogleAuthorizeTask.java" afterPath="$PROJECT_DIR$/src/com/example/wh40k/GoogleAuthorizeTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/wh40k/MyActivity.java" afterPath="$PROJECT_DIR$/src/com/example/wh40k/MyActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/wh40k/Roster.java" afterPath="$PROJECT_DIR$/src/com/example/wh40k/Roster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/note.xml" afterPath="$PROJECT_DIR$/res/layout/note.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/roster.xml" afterPath="$PROJECT_DIR$/res/layout/roster.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/socialauth-4.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libs/socialauth-android-3.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/MaterialDesign_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/MaterialTabs_0_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_ui_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_22_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_api_client_1_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_api_client_android_1_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_api_services_calendar_v3_rev87_1_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_http_client_1_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_http_client_android_1_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_http_client_gson_1_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_http_client_jackson2_1_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_http_client_jackson_1_18_0_rc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_oauth_client_1_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_oauth_client_java6_1_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/google_oauth_client_jetty_1_19_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/guava_jdk5_13_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_2_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_asl_1_9_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jetty_6_1_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jetty_util_6_1_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jsr305_1_3_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/library_2_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/material_calendarview_0_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/multidex_1_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_analytics_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appindexing_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appstate_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_base_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_cast_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_drive_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_fitness_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_games_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_gcm_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_identity_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_location_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_maps_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_nearby_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_panorama_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_plus_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_safetynet_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_wallet_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_wearable_7_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api_2_5_20081211.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/socialauth_4_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/socialauth_android_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_1_1.xml" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\.idea\libraries\appCompat.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\.idea\libraries\google_libs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\.idea\libraries\google_play_services.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\.idea\libraries\libs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\.idea\libraries\libs1.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\.classpath" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\README.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\gen\com\google\android\gms\BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\gen\com\google\android\gms\Manifest.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\gen\com\google\android\gms\R.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\google-play-services_lib.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\libs\google-play-services.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\libs\google-play-services.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\proguard.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\color\common_signin_btn_text_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\color\common_signin_btn_text_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\color\wallet_primary_text_holo_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\color\wallet_secondary_text_holo_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_ic_googleplayservices.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\powered_by_google_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-hdpi\powered_by_google_light.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\powered_by_google_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-mdpi\powered_by_google_light.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-tvdpi\common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-tvdpi\ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-tvdpi\ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-tvdpi\ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-tvdpi\ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\powered_by_google_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xhdpi\powered_by_google_light.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_full_open_on_phone.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_icon_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_icon_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_icon_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_icon_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_icon_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_icon_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_icon_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_icon_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_icon_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_icon_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_text_disabled_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_text_disabled_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_text_disabled_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_text_disabled_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_text_focus_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_text_focus_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_text_normal_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_text_normal_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_text_pressed_dark.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\common_signin_btn_text_pressed_light.9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\ic_plusone_medium_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\ic_plusone_small_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\ic_plusone_standard_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\ic_plusone_tall_off_client.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\powered_by_google_dark.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable-xxhdpi\powered_by_google_light.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable\common_signin_btn_icon_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable\common_signin_btn_icon_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable\common_signin_btn_text_dark.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\drawable\common_signin_btn_text_light.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\raw\gtm_analytics" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-af\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-am\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ar\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-bg\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-bn-rBD\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ca\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-cs\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-da\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-de\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-el\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-en-rGB\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-en-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-es-rUS\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-es\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-es\wallet_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-et-rEE\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-eu-rES\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-fa\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-fi\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-fr-rCA\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-fr\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-gl-rES\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-hi\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-hr\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-hu\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-hy-rAM\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-in\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-is-rIS\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-it\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-iw\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ja\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ka-rGE\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-kk-rKZ\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-km-rKH\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-kn-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ko\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ky-rKG\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-lo-rLA\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-lt\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-lv\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-mk-rMK\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ml-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-mn-rMN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-mr-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ms-rMY\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-my-rMM\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-nb\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ne-rNP\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-nl\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-pl\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-pt-rBR\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-pt-rPT\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-pt\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ro\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ru\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-si-rLK\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-sk\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-sl\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-sr\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-sv\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-sw\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ta-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-te-rIN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-th\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-tl\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-tr\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-uk\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-ur-rPK\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-uz-rUZ\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-vi\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-zh-rCN\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-zh-rHK\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-zh-rTW\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values-zu\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\admob_ads_attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\admob_iap_style.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\admob_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\common_attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\common_colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\common_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\maps_attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\version.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\wallet_attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\wallet_colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\wallet_strings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\res\values\wallet_styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\google-play-services_lib\src\android\UnusedStub.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-android-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-android-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-appengine-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-gson-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-gson-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-jackson2-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-jackson2-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-java6-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-protobuf-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-protobuf-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-servlet-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-xml-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-client-xml-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-api-services-calendar-v3-rev121-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-android-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-android-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-appengine-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-gson-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-gson-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-jackson-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-jackson-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-jackson2-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-jackson2-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-jdo-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-jdo-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-protobuf-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-protobuf-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-xml-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-http-client-xml-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-oauth-client-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-oauth-client-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-oauth-client-appengine-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-oauth-client-java6-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-oauth-client-jetty-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\google-oauth-client-servlet-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\gson-2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\gson-2.1.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\httpclient-4.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\httpcore-4.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\jackson-core-2.1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\jackson-core-2.1.3.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\jackson-core-asl-1.9.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\jackson-core-asl-1.9.11.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\jetty-6.1.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\jetty-util-6.1.26.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\nineoldandroids-2.4.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\socialauth-4.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\compile_libs\socialauth-android-3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google-api-client-android-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google-api-client-android-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google-api-client-appengine-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google-api-client-gson-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google-api-client-gson-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google-api-client-protobuf-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google-api-client-protobuf-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google-api-client-servlet-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google-api-client-xml-1.20.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google-api-client-xml-1.20.0.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google_libs\commons-logging-1.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google_libs\guava-jdk5-13.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google_libs\jdo2-api-2.3-eb.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google_libs\jsr305-1.3.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google_libs\protobuf-java-2.4.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google_libs\protobuf-java-2.4.1.jar.properties" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google_libs\transaction-api-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\libs\google_libs\xpp3-1.1.4c.jar" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Urgak_000\IdeaProjects\wh40kGradle\out\production\wh40k\wh40k.apk" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wh40k.iml" afterPath="$PROJECT_DIR$/wh40k.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wh40k.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,59 +420,25 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="wh40k" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.088235">
-              <caret line="48" column="108" selection-start-line="48" selection-start-column="108" selection-end-line="48" selection-end-column="108" />
+            <state vertical-scroll-proportion="0.5670996">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Roster.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/Roster.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36666667">
-              <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-              <folding>
-                <element signature="e#1885#2112#0" expanded="true" />
-                <element signature="e#2111#2112#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArmyListActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/ArmyListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="roster.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/roster.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -128,11 +446,23 @@
         <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="204" column="8" selection-start-line="204" selection-start-column="8" selection-end-line="204" selection-end-column="8" />
+              <caret line="124" column="34" selection-start-line="124" selection-start-column="34" selection-end-line="124" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4648#4656#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-28.205883">
+              <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,6 +482,911 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="wh40k" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="wh40k" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the Android dependencies of the project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="androidDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all variants of all applications and secondary packages." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all the Test applications." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assembleAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Debug builds." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assembleDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the android (on device) tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assembleDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the unit tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assembleDebugUnitTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles all Release builds." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assembleRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the unit tests for the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assembleReleaseUnitTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="checkDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="checkReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="collectDebugMultiDexComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="collectReleaseMultiDexComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAndroidTestAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAndroidTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAndroidTestNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAndroidTestRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugAndroidTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileDebugUnitTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseAidl" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileReleaseUnitTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'wh40k'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs and runs the tests for Debug build on connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="connectedAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks on currently connected devices." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="connectedCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="createDebugMainDexClassList" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="createReleaseMainDexClassList" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'wh40k'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'wh40k'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="deviceCheck" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dexDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dexDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dexRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAndroidTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAndroidTestBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAndroidTestResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAndroidTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAndroidTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateDebugSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateReleaseBuildConfig" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateReleaseResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="generateReleaseSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the android (on device) tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="installDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on all variants." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="lint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="lintDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs lint on the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="lintRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeDebugAndroidTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeDebugAndroidTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeDebugAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeReleaseAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mockableAndroidJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="packageAllDebugClassesForMultiDex" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="packageAllReleaseClassesForMultiDex" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="packageDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="packageDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="packageRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preCompileDebugUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preCompileReleaseUnitTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preDebugAndroidTestBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preDebugBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preDexDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="preReleaseBuild" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:appcompat-v7:22.1.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV72211Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:multidex:1.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportMultidex100Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:22.1.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportV42211Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.github.markushi:android-ui:1.2" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGithubMarkushiAndroidUi12Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.github.navasmdc:MaterialDesign:1.4" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGithubNavasmdcMaterialDesign14Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServices700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-ads:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesAds700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-analytics:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesAnalytics700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-appindexing:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesAppindexing700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-appstate:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesAppstate700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-base:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesBase700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-cast:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesCast700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-drive:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesDrive700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-fitness:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesFitness700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-games:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesGames700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-gcm:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesGcm700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-identity:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesIdentity700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-location:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesLocation700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-maps:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesMaps700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-nearby:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesNearby700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-panorama:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesPanorama700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-plus:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesPlus700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-safetynet:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesSafetynet700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-wallet:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesWallet700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-wearable:7.0.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesWearable700Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.prolificinteractive:material-calendarview:0.3.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComProlificinteractiveMaterialCalendarview031Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareDebugAndroidTestDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareDebugDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare it.neokree:MaterialTabs:0.11" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareItNeokreeMaterialTabs011Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareReleaseDependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugAndroidTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugAndroidTestManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugAndroidTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processDebugResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processReleaseJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'wh40k'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'wh40k'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="shrinkDebugMultiDexComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="shrinkReleaseMultiDexComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the signing info for each variant." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="signingReport" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'wh40k'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run all unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run unit tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Run unit tests for the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstall all applications." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="uninstallAll" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="uninstallDebug" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the android (on device) tests for the Debug build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="uninstallDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Uninstalls the Release build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="uninstallRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="validateDebugSigning" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="zipalignDebug" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="2860105530508" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/android/m2repository/com/android/support/appcompat-v7/22.1.1/appcompat-v7-22.1.1.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-calendar/v3-rev87-1.19.0/b36312b98ae8f31ae7e0effd72ce92a16d8248eb/google-api-services-calendar-v3-rev87-1.19.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-calendar/v3-rev87-1.19.0/3343601b194726347ff30ad596880fc321654538/google-api-services-calendar-v3-rev87-1.19.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client-android/1.19.0/b871f6addeb73ffd078df73e7d8593edeb8676ab/google-api-client-android-1.19.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client-android/1.19.0/ba2aafb867f6af469f936ae76426cf0a280094bd/google-api-client-android-1.19.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-gson/1.19.0/e5be6aa9f0ec91975f336236c67e5d7df4e82482/google-http-client-gson-1.19.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-gson/1.19.0/b3cdefb990d5212bb2a130525b20e2c44aeffc4c/google-http-client-gson-1.19.0.jar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services/7.0.0/play-services-7.0.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client-jetty/1.19.0/691124f7562ba4d414736231b5552f03528aee30/google-oauth-client-jetty-1.19.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client-jetty/1.19.0/b92560253908e8cd71142179d3250e1b8701d48e/google-oauth-client-jetty-1.19.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-jackson/1.18.0-rc/bd7f40162fd5585af4556fd2902bfa8ba9b907f5/google-http-client-jackson-1.18.0-rc-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-jackson/1.18.0-rc/41709e65945d199103630eea319225cc12b40044/google-http-client-jackson-1.18.0-rc.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.navasmdc/MaterialDesign/1.4/dce78536200a79054216d7d26a7c9becca70cd56/MaterialDesign-1.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.navasmdc/MaterialDesign/1.4/3d39ac96244fb3b7c31b1b3d85f8bf07db18388e/MaterialDesign-1.4.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/83d41901478fa8795254244acbafd03f14224dab/library-2.4.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/it.neokree/MaterialTabs/0.11/6ce2a9aab571fe40cf8ae8a4bcfd0eae1084752d/MaterialTabs-0.11-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/it.neokree/MaterialTabs/0.11/e72326a828605fe0d4022c2174f15c0ecb513163/MaterialTabs-0.11.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.prolificinteractive/material-calendarview/0.3.1/666202dde861905aae737e4db841545f5f8ca360/material-calendarview-0.3.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.prolificinteractive/material-calendarview/0.3.1/eb9d11b2accdc5b86bb6a416cb5d9c9b573b8d5d/material-calendarview-0.3.1.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/android/m2repository/com/android/support/support-v4/22.1.1/support-v4-22.1.1.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client/1.19.0/5187b30c7daa5062151fcb2a7b320ec71a6af6ef/google-api-client-1.19.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client/1.19.0/6a21277d9bebe267b7ddee028b241eebc756c040/google-api-client-1.19.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-android/1.19.0/a4475e5619cb4c6ee07ac71d6dda3118acdeb84e/google-http-client-android-1.19.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-android/1.19.0/e3f11020c2c812112803d252d1392872d3f619c8/google-http-client-android-1.19.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client/1.19.0/ab66853851c2c9a2075ca52bc649205f41102c76/google-http-client-1.19.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client/1.19.0/cdca49ad0977c040f603478aa2e16b2775c8fec6/google-http-client-1.19.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.1/5c2e6207e9abf9a18bde012371a821196dd18e13/gson-2.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.1/2e66da15851f9f5b5079228f856c2f090ba98c38/gson-2.1.jar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-ads/7.0.0/play-services-ads-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-analytics/7.0.0/play-services-analytics-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-appindexing/7.0.0/play-services-appindexing-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-appstate/7.0.0/play-services-appstate-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-base/7.0.0/play-services-base-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-cast/7.0.0/play-services-cast-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-drive/7.0.0/play-services-drive-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-fitness/7.0.0/play-services-fitness-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-games/7.0.0/play-services-games-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-gcm/7.0.0/play-services-gcm-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-identity/7.0.0/play-services-identity-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-location/7.0.0/play-services-location-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-maps/7.0.0/play-services-maps-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-nearby/7.0.0/play-services-nearby-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-panorama/7.0.0/play-services-panorama-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-plus/7.0.0/play-services-plus-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-safetynet/7.0.0/play-services-safetynet-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-wallet/7.0.0/play-services-wallet-7.0.0.aar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/google/m2repository/com/google/android/gms/play-services-wearable/7.0.0/play-services-wearable-7.0.0.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client-java6/1.19.0/764651684da9fc7f212f5461576dc3a59a58e264/google-oauth-client-java6-1.19.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client-java6/1.19.0/f09355e748c2da47e5cc6b9dac9f363a164b289d/google-oauth-client-java6-1.19.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty/6.1.26/9e275882f6d3400b05674c79e97014a255dfaf43/jetty-6.1.26-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty/6.1.26/2f546e289fddd5b1fab1d4199fbb6e9ef43ee4b0/jetty-6.1.26.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.11/e61687a76d77cda609bab7479acbded1f7cceec4/jackson-core-asl-1.9.11-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.11/e32303ef8bd18a5c9272780d49b81c95e05ddf43/jackson-core-asl-1.9.11.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.markushi/android-ui/1.2/a79ba30f86194292b41a9555fe52a0339d7f5949/android-ui-1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.markushi/android-ui/1.2/f301efae7b0e3bdc92a6c08cafba0b78ce930e69/android-ui-1.2.aar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client/1.19.0/1bc8688ce92f50dfa0c3b0b0d90fd3298ba2f006/google-oauth-client-1.19.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client/1.19.0/d473a8962e14a707a3716637e4898bb2dd9643f2/google-oauth-client-1.19.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-jackson2/1.19.0/6f1c4d557b8a50e3592691e2ae98fd89c3c896e/google-http-client-jackson2-1.19.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-jackson2/1.19.0/81dbf9795d387d5e80e55346582d5f2fb81a42eb/google-http-client-jackson2-1.19.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava-jdk5/13.0/8634176744134a352acf6dc5f3dc2b741e691262/guava-jdk5-13.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava-jdk5/13.0/381ae6c8add7c98e9bcddb1e0b898400cd6fc3f7/guava-jdk5-13.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty-util/6.1.26/ca704dfc9e26567bd69ee3f065a1337fa6d296f/jetty-util-6.1.26-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jetty-util/6.1.26/e5642fe0399814e1687d55a3862aa5a3417226a9/jetty-util-6.1.26.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/servlet-api/2.5-20081211/b0b7c1931bcdbeb25c2aa4aec14d7b979b53dc51/servlet-api-2.5-20081211-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/servlet-api/2.5-20081211/22bff70037e1e6fa7e6413149489552ee2064702/servlet-api-2.5-20081211.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.1.3/d313b1839906da7422387b180a124c81e13e65a2/jackson-core-2.1.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.1.3/f6c3aed1cdfa21b5c1737c915186ea93a95a58bd/jackson-core-2.1.3.jar" />
+                            <option value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar" />
+                            <option value="$MODULE_DIR$/libs/socialauth-4.4.jar" />
+                            <option value="$MODULE_DIR$/libs/socialauth-android-3.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/1.1.2/f0c542870817e33467baad7d3892584c6a0b991c/gradle-1.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/1.1.2/26b38d3e999f69ea501b48ba335ada3f07014a06/gradle-1.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/1.1.2/de3e8dc1cf48b03c2b7f1495776266ec000bb36b/gradle-core-1.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-core/1.1.2/a00cbafb8c7b46c8cbad69b0d8becf0ddc584172/gradle-core-1.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/1.1.2/ae01c7d859623b09061933e3c7229a88433ee94c/builder-1.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/1.1.2/ec1df0e77d1ddcff8f31264e98237f959d71551a/builder-1.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/24.1.2/4367a98ab36a68c6672d1906fed186c099695087/lint-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint/24.1.2/3afda1d823ceab2a70da56b57d933dced884295c/lint-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/5.1/1052878364479b1eb101e52e625713d2362973bb/proguard-gradle-5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/5.1/672d43cbfde4765080e5bea19c51a2cc45dfc00/proguard-gradle-5.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/1.1.2/3c932a61dd735c29df1a6008735d303b67fdcdbe/builder-model-1.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/1.1.2/9a36f4f21a4208e8f09f0cd93161c56c2a7144b2/builder-model-1.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/1.1.2/b910293f0ccd8f295c2e58bca309e493251743af/builder-test-api-1.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/1.1.2/297ef2cdcd9e90d5cc4b5592343f082e723151e4/builder-test-api-1.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/24.1.2/697720d72c3c45949423f78272f7ec625f8e8ec4/sdklib-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/24.1.2/7ceab70bf188f060ce350de24383d98960be72d5/sdklib-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/24.1.2/16ee50d6a9236f5a9202c2500ca033b70d5ce4d9/sdk-common-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/24.1.2/3dc51f9a7132b9278fba532479057eda5fdffbf4/sdk-common-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/24.1.2/e3c8ff336f3da67cab72eaab8d09c645377e2ce3/common-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/common/24.1.2/6bcd355692e88a0d99829cbe1e11306835025c20/common-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/24.1.2/9bcf9d39a34a10cc5f7f56fa15fdcf3b05e42ff/manifest-merger-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/24.1.2/8009d1da8c994b23fe9060d5fcbd8877ed2e419f/manifest-merger-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/24.1.2/f04b9815e1fa835f10000564bf6743776c35cbd1/ddmlib-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/24.1.2/a88c4f14fc8416a118b2d5fb3c75a5bfb632f858/ddmlib-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/1b2a0925ff06220c0261b6fd468183cd9e9a9a47/javawriter-2.5.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/81241ff7078ef14f42ea2a8995fa09c096256e6b/javawriter-2.5.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.48/8cff777fce5ef53cc35fa569faa8d12faaf34a78/bcpkix-jdk15on-1.48-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.48/28b7614b908a47844bb27e3c94b45b6893656265/bcpkix-jdk15on-1.48.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.48/3824866f059053c43b118eb5a067ea1800d8c913/bcprov-jdk15on-1.48-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcprov-jdk15on/1.48/960dea7c9181ba0b17e8bab0c06a43f0a5f04e65/bcprov-jdk15on-1.48.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.0.3/f0f24f6666c1a15c7e202e91610476bd4ce59368/asm-5.0.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.0.3/dcc2193db20e19e1feca8b1240dbbc4e190824fa/asm-5.0.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/5.0.3/f0f24f6666c1a15c7e202e91610476bd4ce59368/asm-tree-5.0.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/5.0.3/287749b48ba7162fb67c93a026d690b29f410bed/asm-tree-5.0.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/24.1.2/6b33e917977b338967e76115d247e15f1bc8ab6d/lint-checks-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-checks/24.1.2/e03fd627e7f13c6f49eb798218215146d1b51bc4/lint-checks-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.4/cae5bc498a10b9244168e64f2455cd6d72d4f907/ecj-4.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.4/fe0a961ce7cca03dd3c9b3775c0133229e8231a6/ecj-4.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-base/5.1/8fe59a34d305b39211bec38479c0e23114d87805/proguard-base-5.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-base/5.1/dc606dd778fe4685be16d5a171782ccfe0ef5637/proguard-base-5.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/24.1.2/54f7b8e4ff68949ad3621ce3fe3c41a3197e7ad3/annotations-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/24.1.2/5228b012620bca1ff606e70c425525439ae524d8/annotations-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/24.1.2/b62fad09af423f12c7863bd355e87ac6e91002fa/layoutlib-api-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/24.1.2/37cfcb038032251fb159b74ecb5ac099020dd3bd/layoutlib-api-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/24.1.2/94dc597d242d0ea529f64c200f8ef28b208e888c/dvlib-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/24.1.2/49509877c63a7f85b0270c6d7454b2ea9baa04cd/dvlib-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/3caea4421428752206c7a94c3e3097f0c47f1bb8/commons-compress-1.8.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.8.1/a698750c16740fd5b3871425f4cb3bbaa87f529d/commons-compress-1.8.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.1.1/42f6189003f355107f53b937770092517de69710/httpclient-4.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.1.1/3d1d918f32709e33ba7ddb2c4e8d1c543ebe713e/httpclient-4.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.1/3ac83213baeab2b21fde6c0bf47ed68ea3e6a8da/httpmime-4.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.1/9ba2dcdf94ce35c8a8e9bff242db0618ca932e92/httpmime-4.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a6dc5db8a12928e583bd3f23e72d3ab611ecd58f/gson-2.2.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/7ca0efbeb87ca845b5d7a0ac9c21a4b7b95f7b28/guava-17.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/17.0/9c6ef172e8de35fd8d4d8783e4821e57cdef7445/guava-17.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/309cd2cff7260e465792fda3dcbb063b730d8050/kxml2-2.3.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/ccbc77a5fd907ef863c29f3596c6f54ffa4e9442/kxml2-2.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/24.1.2/e20ce7ed50b58c920756bbf8d331b9e0ae85fb7a/lint-api-24.1.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-api/24.1.2/784dd388dfdf32122d15c245e90e647e931844d9/lint-api-24.1.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/5.0.3/f0f24f6666c1a15c7e202e91610476bd4ce59368/asm-analysis-5.0.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/5.0.3/c7126aded0e8e13fed5f913559a0dd7b770a10f3/asm-analysis-5.0.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.1/1fdf61e5ba87e0e4676c22677e0b2fe3a05c2fd8/httpcore-4.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.1/33fc26c02f8043ab0ede19eadc8c9885386b255c/httpcore-4.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/commons-logging-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.4/5310da9f90e843883309e9e0bf5950faa79882a0/commons-codec-1.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.4/4216af16d38465bbab0f3dff8efa14204f7a399a/commons-codec-1.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.lombok/lombok-ast/0.2.3/b4f90836c51edefa4a38c97877b709ed2c15ee32/lombok-ast-0.2.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.tools.external.lombok/lombok-ast/0.2.3/528b6f8bde3157f17530aa366631f2aad2a6cf9/lombok-ast-0.2.3.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="wh40k" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/ant-1.9.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/ant-launcher-1.9.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-base-services-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-base-services-groovy-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-cli-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-core-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-docs-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-launcher-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-messaging-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-model-core-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-model-groovy-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-native-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-open-api-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-resources-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-tooling-api-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-ui-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/gradle-wrapper-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/groovy-all-2.3.9.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-announce-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-antlr-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-build-comparison-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-build-init-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-code-quality-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-cunit-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-dependency-management-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-diagnostics-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-ear-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-ide-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-ide-native-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-ivy-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-jacoco-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-javascript-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-jetty-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-language-groovy-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-language-java-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-language-jvm-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-language-native-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-language-scala-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-maven-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-osgi-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-platform-base-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-platform-jvm-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-platform-native-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-platform-play-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-plugin-development-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-plugin-use-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-plugins-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-publish-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-reporting-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-resources-http-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-scala-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-signing-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/gradle-sonar-2.3.jar" />
+                  <option value="C:/Program Files (x86)/gradle-2.3/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -177,7 +1412,6 @@
         <option value="$PROJECT_DIR$/res/layout/army_unit_options.xml" />
         <option value="$PROJECT_DIR$/src/com/example/wh40k/W40kModel.java" />
         <option value="$PROJECT_DIR$/src/com/example/wh40k/W40kUnit.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/proguard-project.txt" />
         <option value="$PROJECT_DIR$/../MaterialDesignLibrary-master/MaterialDesign/src/com/gc/materialdesign/views/ProgressBarIndeterminate.java" />
         <option value="$PROJECT_DIR$/google-play-services_lib/res/values/styles.xml" />
@@ -185,13 +1419,24 @@
         <option value="$PROJECT_DIR$/res/layout/note.xml" />
         <option value="$PROJECT_DIR$/src/com/example/wh40k/GoogleAuthorizeTask.java" />
         <option value="$PROJECT_DIR$/src/com/example/wh40k/note.java" />
-        <option value="$PROJECT_DIR$/src/com/example/wh40k/MyActivity.java" />
         <option value="$PROJECT_DIR$/src/com/example/wh40k/ArmyUnitOptionsActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/roster.xml" />
         <option value="$PROJECT_DIR$/src/com/example/wh40k/Roster.java" />
         <option value="$PROJECT_DIR$/src/com/example/wh40k/ArmyListActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/local.properties" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/src/com/example/wh40k/MyActivity.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="NamedScopeManager">
@@ -202,6 +1447,31 @@
     <option name="y" value="-9" />
     <option name="width" value="1938" />
     <option name="height" value="1064" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -226,9 +1496,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,7 +1510,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
+              <option name="myItemId" value="wh40kGradle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -253,35 +1520,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
+              <option name="myItemId" value="wh40kGradle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -289,43 +1534,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout-land" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
+              <option name="myItemId" value="wh40kGradle" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -337,22 +1546,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wh40k" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,14 +1566,14 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="EP73050052" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="TA20703W1A" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="last_opened_file_path" value="C:/adt-bundle-windows-x86_64-20131030/sdk/extras/android/m2repository/com/android/support/appcompat-v7/19.1.0" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.1529745" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -482,6 +1680,15 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -559,7 +1766,7 @@
       <option name="DISABLE_BOOT_ANIMATION" value="false" />
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="CLEAR_LOGCAT" value="true" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
       <RunnerSettings RunnerId="AndroidDebugRunner" />
@@ -590,29 +1797,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3238512" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3107221" sideWeight="0.40160426" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47155362" sideWeight="0.097326204" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4584245" sideWeight="0.31657755" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15882353" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47155362" sideWeight="0.9026738" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968238" sideWeight="0.48128343" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4584245" sideWeight="0.68342245" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2486631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39606127" sideWeight="0.49786097" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39606127" sideWeight="0.49358287" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -627,28 +1835,29 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4584245" sideWeight="0.31657755" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973261" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39606127" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39606127" sideWeight="0.49358287" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3238512" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3107221" sideWeight="0.40160426" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15882353" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15882353" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932165" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822758" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47155362" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973261" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968238" sideWeight="0.48128343" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4584245" sideWeight="0.68342245" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2486631" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932165" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -691,20 +1900,37 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/W40kOptionSlot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="162" column="47" selection-start-line="162" selection-start-column="47" selection-end-line="162" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4648#4656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/note.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#4784#4785#0" expanded="false" />
+            <element signature="e#4810#4811#0" expanded="false" />
+            <element signature="e#5691#6954#0" expanded="false" />
+            <element signature="e#6953#6954#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/GoogleAuthorizeTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+          <folding>
+            <element signature="e#4668#4669#0" expanded="false" />
+            <element signature="e#4701#4702#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -713,13 +1939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="89" column="9" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/SpaceMarines.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -758,33 +1977,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout-land/main.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/SpaceMarines.xml">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/oauth_consumer.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3984109">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -834,14 +2032,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/info_header.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/CodexXMLParser.java">
@@ -876,7 +2073,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.276958">
           <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,25 +2091,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/army_list.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/army_unit_options.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.2">
           <caret line="15" column="15" selection-start-line="2" selection-start-column="0" selection-end-line="15" selection-end-column="15" />
-          <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="jar://C:/adt-bundle-windows-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/widget/NumberPicker.class">
@@ -926,23 +2120,6 @@
     <entry file="file://$PROJECT_DIR$/res/drawable-ldpi/ic_launcher.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proguard-project.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85017025">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67423385">
-          <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
-          <folding>
-            <element signature="e#1457#1496#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/W40kUnit.java">
@@ -963,7 +2140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.61986303">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -974,46 +2150,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/google-play-services_lib/res/values/common_colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google-play-services_lib/res/values/common_attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/GoogleAuthorizeTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="67" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/note.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="15" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
-          <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05140187">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,24 +2171,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/roster.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/Roster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.049833886">
+          <caret line="65" column="60" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3283582">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-v21/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15198618">
+          <caret line="4" column="87" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/ArmyUnitOptionsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12">
+        <state vertical-scroll-proportion="3.2773972">
           <caret line="100" column="64" selection-start-line="100" selection-start-column="64" selection-end-line="100" selection-end-column="64" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6026273">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/note.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0588236">
-          <caret line="48" column="33" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
+            <element signature="e#4784#4785#0" expanded="false" />
+            <element signature="e#4810#4811#0" expanded="false" />
+            <element signature="e#5691#6954#0" expanded="false" />
+            <element signature="e#6953#6954#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/GoogleAuthorizeTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+          <folding>
+            <element signature="e#4668#4669#0" expanded="false" />
+            <element signature="e#4701#4702#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1046,54 +2268,39 @@
     <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/ArmyListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="99" column="5" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/roster.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.088235">
-          <caret line="48" column="108" selection-start-line="48" selection-start-column="108" selection-end-line="48" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.205883">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="48" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="204" column="8" selection-start-line="204" selection-start-column="8" selection-end-line="204" selection-end-column="8" />
+          <caret line="124" column="34" selection-start-line="124" selection-start-column="34" selection-end-line="124" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4648#4656#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/wh40k/Roster.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36666667">
-          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-          <folding>
-            <element signature="e#1885#2112#0" expanded="true" />
-            <element signature="e#2111#2112#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.5670996">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1114,7 +2321,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Android (wh40k)|Android</last-edited>
+          <last-edited>Android-Gradle (wh40k)|Android-Gradle</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1137,7 +2344,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android SDK</last-edited>
+          <last-edited>Android API 22 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1154,6 +2361,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1161,7 +2369,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>appCompat</last-edited>
+          <last-edited>support-annotations-22.1.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
