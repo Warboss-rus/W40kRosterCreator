@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -13,7 +17,7 @@
     <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinnerRace" android:layout_gravity="center_horizontal"/>
+            android:id="@+id/spinnerRace"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,11 +28,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinner3"/>
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Добавить"
-            android:id="@+id/button5" android:layout_gravity="center_horizontal"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,4 +38,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/listView3"/>
-</LinearLayout>
+    </LinearLayout>
+    <com.gc.materialdesign.views.ButtonFloat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="12dp"
+            materialdesign:animate="true"
+            materialdesign:iconDrawable="@drawable/ic_action_new"
+            android:id="@+id/button5"/>
+</RelativeLayout>

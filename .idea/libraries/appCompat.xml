@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="appCompat">
-    <CLASSES>
-      <root url="file://C:/adt-bundle-windows-x86_64-20131030/sdk/extras/android/m2repository/com/android/support/appcompat-v7/19.1.0" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -2,7 +2,6 @@
   <library name="libs1">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../MaterialDesignLibrary-master/MaterialDesign/libs/nineoldandroids-2.4.0.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../MaterialDesignLibrary-master/MaterialDesign/libs/android-support-v4.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

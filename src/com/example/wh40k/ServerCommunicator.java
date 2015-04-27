@@ -51,7 +51,7 @@ public class ServerCommunicator {
                     activity.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            activity.GetVersionComplete(Integer.parseInt(output));
+                            //activity.GetVersionComplete(Integer.parseInt(output));
                         }
                     });
                 } catch (Exception e) {
